@@ -1,3 +1,5 @@
-/* Code here */
-/* code here again */
-/* add stylings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
