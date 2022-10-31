@@ -1,5 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --primary-color1: #5D9943;
+    --primary-color2: #475D2A;
+    --secondary-color1: #8BC53F;
+    --secondary-color2: #34aeeb;
+    --tertiarycolor1: #425F57;
+    --tertiarycolor2: #9F8772;
+    --tertiarycolor3: #665A48;
+    --neutralcolor1: #FFF8EA;
+    --neutralcolor2: #1C0A00;
+    --neutralcolor3: #361500;
+    --primaryheader-font: "Nunito Sans", sans-serif;
+    --secondaryheader-font: "Roboto", sans-serif;
+    --maincontent-font: "Poppins", sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* body stylings here */
+body {
+    font-family: var(--maincontent-font);
+    font-weight: lighter;
+
+}
+
+body h2 {
+    font-family: var(--primaryheader-font);
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 4em;
+    text-shadow: 2px 3px 6px rgba(54, 21, 0, 0.4);
 }
