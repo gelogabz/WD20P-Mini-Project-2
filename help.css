@@ -1,0 +1,182 @@
+
+body{
+    background-image: linear-gradient(1000deg,#d1ebb0,#dbf5d2);
+    font-family:poppins !important;
+}
+
+/* NAVBAR START */
+.about {
+    color: limegreen;
+    text-shadow: 2px 2px black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.about:hover {
+    color: white;
+}
+
+.about:link {
+    color: white;
+}
+/* NAVBAR END */
+
+/* SECTION ONE */
+
+.first_sec{
+    background-color: rgba(255, 254, 254,0.6);
+    border-radius: 35px;
+}
+
+.address{
+    background-color: rgba(255, 254, 254,0.6);
+    border-radius: 35px;
+}
+.phone{
+    background-color: rgba(255, 254, 254,0.6);
+    border-radius: 35px;
+}
+.email{
+    background-color: rgba(255, 254, 254,0.6);
+    border-radius: 35px;
+}
+
+/* SUBTITLE OF HELP HEADING */
+.subtitle1{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+/* BUTTON FOR SUGGESTION FORM START*/
+.help_btn{
+    color: white;
+    font-size:18px;
+    background-color: #5D9943;
+    border-radius: 30px;
+    border-width: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.20s, padding 0.40s, margin 0.40s;
+}
+.help_btn:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.help_btn:active{
+    opacity: 0.8;
+}
+/* BUTTON FOR SUGGESTION FORM END*/
+
+/* SUGGESTION FORM INPUTS */
+
+
+/* BUTTON ON MODAL */
+.modal_btn{
+    color:white;
+    background-color: #5D9943;
+    border-radius: 30px;
+    border-width: 0px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: background-color 0.30s;
+}
+.modal_btn:hover{
+    background-color: #3f8321;
+}
+.modal-header{
+    background-color: #e8f8e1;
+    border: none !important;
+}
+.modal-body{
+    background-color: #e8f8e1;
+}
+.modal-footer{
+    background-color: #e8f8e1 !important;
+}
+
+/* FAQ labels */
+
+.name_faq{
+    color: #34aeeb;
+    font-weight: bold;
+}
+
+.accordion-item{
+    border-radius: 10px !important;
+}
+.accordion-button{
+    background-color: #eef5ec !important;
+    border-radius: 10px !important;
+
+}
+.accordion-body{
+    background-color: #eaf0ea !important;
+    border-radius: 10px !important;
+}
+
+/* FOOTER START */
+.myfooter{
+    background-color: rgba(255, 254, 254,0.6);
+}
+
+.input1{
+outline:none;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+height: 50px;
+}
+
+.input2{
+    outline:none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 50px;
+}
+.input1:focus{
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0 0 0 0.2) !important ;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+}
+.input2:focus{
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0 0 0 0.2) !important ;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.subscribe_btn{
+    background-color: #34aeeb !important;
+    height: 50px;
+}
+
+.subscribe_btn:hover{
+    background-color: #1b94d1 !important;
+}
+
+.linesafooter{
+    border-style:solid;
+    border-width: 1px;
+    border-color: #c6c7c3;
+}
+
+.click_footer:hover{
+    color: #34aeeb !important;
+}
+.footer_links:hover{
+    font-size: 19px;
+    color: #34aeeb !important;
+}
+.privacy_footer:hover{
+    color: #34aeeb !important;
+}
+
+/* FOOTER END */
+
+
+    
+
