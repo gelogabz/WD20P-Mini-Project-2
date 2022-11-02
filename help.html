@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <title>Services</title>
+    <!--TITLE-->
+    <title>Help page</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/helppage_images/IconOnlyGreen.png.webp"/>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- FOR ICONS -->
@@ -21,251 +23,304 @@
 
 
 <body>
-    <!-- THIS IS FOR SCROLLING START-->
-    
-<!-- SECTION ONE WITH HEADINGS AND IMAGE START-->
-<!--Navigation-Bar-->
-    <section id="Navbar">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-2">
-            <div class="container-fluid">
-                <div class="mx-auto">
+
+<!--Navigation-Bar start-->
+<section id="Navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-2">
+        <div class="container-fluid">
+            <div class="mx-auto">
+                <div class="yeye">
                     <nav class="navbar justify-content-center">
-                        <a class="about fw-bolder px-2 active" href="index.html">About</a>
-                        <a class="about fw-bolder px-2" href="index.html">Services</a>
-                        <a class="about fw-bolder px-2" href="index.html">Accounts</a>
-                        <a class="about fw-bolder px-2" href="index.html">Help</a>
+                        <a class="about fw-bolder px-2 active" href="index.html">ABOUT</a>
+                        <a class="about fw-bolder px-2" href="index.html">SERVICES</a>
+                        <a class="about fw-bolder px-2" href="index.html">ACCOUNTS</a>
+                        <a class="about fw-bolder px-2" href="index.html">HELP</a>
                     </nav>
                 </div>
             </div>
+        </div>
+    </nav>
+</section>
+    <!--Navigation-Bar END-->
+
+<br><br>
+
+<!-- BREADCRUMB START-->
+<div class="container-sm">
+    <div class="m-3">
+        <nav class="mt-5" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Help</li>
+            </ol>
         </nav>
-    </section>
-<br><br><br><br><br>
-        <div class="container-sm">
-            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Help</li>
-                </ol>
-              </nav>
-            <section class="one d-flex justify-content-center align-items-center">
-                <div class="first_sec row justify-content-center">
-                    <div class="col-md-5 text-center text-md-start d-flex align-items-center my-3">
-                        <div>
-                            <p class="heading1 display-5 text-dark mb-4">How Can We Help?</p>
-                            <p class="subtitle1 text-muted">Please select a topic below related to your inquiry. If you
-                            don't find what you need, fill out our Suggestion form.</p>
-                            <button class="help_btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go to our Suggestion form</button>
-                        </div>
+    </div>
+<!-- BREADCRUMB END-->
+    <br><br>
+<!-- SECTION ONE WITH HEADINGS AND IMAGE START-->
+    <section class="one d-flex justify-content-center align-items-center">
+        <div class="mx-3">
+            <div class="first_sec row justify-content-center mb-5">
+                <div class="col-md-5 text-center text-md-start d-flex align-items-center my-3">
+                    
+                    <!-- HEADINGS START -->
+                    <div class="header_body">
+                        <p class="heading1">How Can We Help?</p>
+                        <p class="subtitle1 text-muted">Please select a topic below related to your inquiry. If you
+                        don't find what you need, fill out our Suggestion form.</p>
+                        <button class="help_btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1ko">Go to our Suggestion form</button>
+                    </div>
+                    <!-- HEADINGS END -->
 
-                        <!-- MODAL SUGGESTION FORM START -->                      
-                        <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
-                            <div class="modal-dialog modal-xl modal-frame">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Suggestion Form</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-6 my-2">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" placeholder="First Name" id="floatingTextarea">
-                                                    <label class="text-muted" for="floatingTextarea">First Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 my-2">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
-                                                    <label class="text-muted" for="floatingTextarea">Last Name</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6 my-2">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" placeholder="Email" id="floatingTextarea">
-                                                    <label class="text-muted" for="floatingTextarea">Email</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 my-2">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
-                                                    <label class="text-muted" for="floatingTextarea">Contact no.</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-floating my-2">
-                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                            <label class="text-muted" for="floatingTextarea2">Comments</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="modal-footer d-flex justify-content-center">
-                                        <button type="button" class="modal_btn">Submit Suggestions</button>
-                                    </div>
-
+                    <!-- MODAL SUGGESTION FORM START -->                      
+                    <div class="modal top fade" id="exampleModal1ko" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+                        <div class="modal-dialog modal-xl modal-frame">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
+                                        <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
+                                    </h5>
+                                <button onclick="(closeButton());" type="button" class="btn-close"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal2ko"></button>
                                 </div>
+
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" placeholder="First Name" id="floatingTextarea">
+                                                <label class="text-muted" for="floatingTextarea">First Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 my-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
+                                                <label class="text-muted" for="floatingTextarea">Last Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 my-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" placeholder="Email" id="floatingTextarea">
+                                                <label class="text-muted" for="floatingTextarea">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 my-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
+                                                <label class="text-muted" for="floatingTextarea">Contact no.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating my-2">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button type="button" class="modal_btn">Submit Suggestions</button>
+                                </div>
+
                             </div>
                         </div>
-                        <!-- MODAL SUGGESTION FORM END --> 
+                    </div>
+                    <!-- MODAL SUGGESTION FORM END --> 
 
-                    </div>
-                    
-                    <div class="col-md-5 text-center text-md-end my-3">
-                        <img class="w-75" src="assets/helppage_images/help image 2.png" alt="help image 2">
-                    </div>
+                    <!--MODAL OF MODAL SUGGESTION CLOSE START-->
+                    <div class="modal" id="exampleModal2ko" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Information</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Save Changes ?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--MODAL OF MODAL SUGGESTION CLOSE END-->
                 </div>
-            </section>
+                
+                <div class="col-md-5 text-center text-md-end my-3">
+                    <img class="w-75" src="assets/helppage_images/help image 2.png" alt="help image 2">
+                </div>
+
+            </div>
+        </div>
+    </section>
 <!-- SECTION ONE WITH HEADINGS AND IMAGE END-->
 
+<br><br><br><br>
+
 <!-- SECTION TWO WITH ACCORDION START-->
-            <br><br><br><br>
-            <section class="two">
-                <br>
-                <!-- HEADINGS OF FAQ -->
-                <p class="display-4 text-center text-dark pb-2">Frequently asked Questions</p>
-                <p class="text-center fw-bold">We have answers (well, most of the times!)</p>
-                <div class="alert alert-success" role="alert">
-                    <p class="text-center m-0">Below you'll find answers to the most common questions you may have on <span class="name_faq">LEAVENOTHING ORG.</span>
-                        If you still can't find the answer you're looking for, just Contact us!</p>
-                  </div>
-                
-                <!-- ACCORDION START -->
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item my-2">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #1
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
+    <section class="two">
+        <br>
+        <!-- HEADINGS OF FAQS -->
+        <p class="faq_heading text-center">Frequently Asked Questions (FAQS)</p>
+        <p class="text-center fw-bold">We have answers (well, most of the times!)</p>
 
-                    <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item my-2">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #2
-                                </button>
-                              </h2>
-                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item my-2">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #3
-                                </button>
-                              </h2>
-                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item my-2">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #4
-                                </button>
-                              </h2>
-                              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item my-2">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #5
-                                </button>
-                              </h2>
-                              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item my-2">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #6
-                                </button>
-                              </h2>
-                              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-<!-- SECTION TWO WITH ACCORDION END-->
+        <div class="alert alert-success mx-1" role="alert">
+            <p class="text-center m-0">Below you'll find answers to the most common questions you may have on <span class="name_faq_link">LEAVENOTHING ORG.</span>
+                If you still can't find the answer you're looking for, just Contact us!</p>
         </div>
 
-            <section class="three">
-                <div class="container">
-                    <br>
-                    
-                    <p class="display-5 text-center">GET IN TOUCH</p>
-                    <br>
-                    <div class="row gy-3">
-                        <div class="col-md-4 text-center px-2">
-                            <div class="address" >
-                                <i class="icon1 bi bi-geo-alt-fill" style="font-size:60px; color:rgb(25, 101, 136);"></i>
-                                <p class="fw-bold h4">ADDRESS</p>
-                                <br>
-                                <ul class="list-unstyled footer-link text-center">
-                                    <li class="">
-                                        <p class="mb-0 h5">LeaveNothing.Org Group</p>
-                                        <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
-                                    </li>
-                                    <li class="">
-                                        <p class="mb-0 h5">LeaveNothing.Org Main Office</p>
-                                        <p class="text-muted">146 4th Flr. Rima Building Filinvest, Alabang, Muntinlupa</p>
-                                    </li>
-                                    <li class="">
-                                        <p class="mb-0 h5">LeaveNothing.Org Volunteers</p>
-                                        <p class="text-muted">4526 Beligma street Pasig city, Metro Manila</p>
-                                    </li>
-                                </ul>
-                            </div>
+        <!-- HEADINGS OF FAQS -->
+        
+        <!-- ACCORDION START -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 px-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is global warming?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The earths climate has remained relatively stable for most of human history.  This is evident from temperature records some of which date back to the mid-1800s and before this based on reconstruction from other records and measurements e.g. tree rings.   Since about the middle of the 20th Century an increasing trend is evident in the global temperature record. This is frequently referred to as global warming, but the term can include other changes such as melting of ice and thermal expansion of the oceans which is a major contributor to sea-level rise.</div>
                         </div>
-                        <div class="phone col-md-4 text-center px-2 ">
-                            <div class="address">
-                            <i class="icon2 bi bi-telephone" style="font-size:60px; color:rgb(25, 101, 136);"></i>
-                            <p class="fw-bold h4">PHONE</p>
-                            <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 px-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is adaptation?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Adaptation is the approach for addressing the current and future risks posed by a changing climate. Climate adaptation involves taking steps to adjust human and natural systems in response to existing or anticipated climatic change, in order both to avoid unwanted impacts and to take advantage of new opportunities that may arise. The National Adaptation Framework defines adaptation as 'a change in natural or human systems in response to the impacts of climate change. These changes moderate harm or exploit beneficial opportunities and can be in response to actual or expected impacts.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 px-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="acc3_body">What impacts of climate change have been observed and what is projected?</span>
+                        </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">In 2018, the global temperature had been increased by 1.0°C relative to pre-industrial levels. At the current rate of warming, the world is expected to reach 1.5°C warming between 2030 and 2052 (IPCC, 2008).  If this continues, the 2°C increase could occur around 2060.  Globally the two main features of climate change are: 
+                            <ul class="mt-3">
+                                <li>changes in the rate of occurrence and scales of extreme weather events, such as heatwaves or rainfall events, and</li>
+                                <li>slow onset changes such as sea-level rise, loss of glaciers, and ecosystem changes. </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 px-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="acc3_body">To whom do I report pollution such as: fish kill; forest fire; oil spillage?</span>
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Pollution incidents should be reported in the first instance to the local authority in whose area the incident occurred as they can respond rapidly. The Local Authority will contact the Environmental Protection Agency if an EPA licensed activity is concerned.  If you know it is an EPA licensed activity you should contact us directly as well as the Local Authority.  Use the following link to obtain full details about how to Make an Environmental Complaint</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 px-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #5
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 px-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #6
+                        </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ACCORDION END -->
+    </section>
+</div>
+<!-- SECTION TWO WITH ACCORDION END-->
+
+<br><br><br><br><br><br>
+        
+<!-- SECTION THREE WITH CONTACT US START-->
+<div class="container">
+    <section class="three">
+            <p class="touch text-center">GET IN TOUCH</p>
+            <br>
+            <div class="row gy-3">
+
+                <div class="col-md-4 text-center px-3">
+                    <div class="address pb-2 h-100">
+                        <i class="icon1 bi bi-geo-alt-fill" style="font-size:60px; color:rgb(25, 101, 136);"></i>
+                        <p class="fw-bold h4">ADDRESS</p>
+                        <br>
+                        <div class="m-3">
+                            <ul class="list-unstyled footer-link text-center">
+                                <li class="">
+                                    <p class="mb-0 h5">LeaveNothing.Org Group</p>
+                                    <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
+                                </li>
+                                <li class="">
+                                    <p class="mb-0 h5">LeaveNothing.Org Main Office</p>
+                                    <p class="text-muted">146 4th Flr. Rima Building Filinvest, Alabang, Muntinlupa</p>
+                                </li>
+                                <li class="">
+                                    <p class="mb-0 h5">LeaveNothing.Org Volunteers</p>
+                                    <p class="text-muted">4526 Beligma street Pasig city, Metro Manila</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center px-3">
+                    <div class="phone pb-2 h-100">
+                        <i class="icon2 bi bi-telephone" style="font-size:60px; color:rgb(25, 101, 136);"></i>
+                        <p class="fw-bold h4">PHONE</p>
+                        <br>
+                        <div class="m-3">
                             <ul class="list-unstyled footer-link text-center">
                                 <li class="">
                                     <p class="mb-0 h5">LeaveNothing.Org Group</p>
@@ -280,12 +335,16 @@
                                     <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
                                 </li>
                             </ul>
-                            </div>
                         </div>
-                        <div class="email col-md-4 text-center px-2">
-                            <i class="icon3 bi bi-envelope-heart" style="font-size:60px; color:rgb(25, 101, 136);"></i>
-                            <p class="fw-bold h4">EMAIL</p>
-                            <br>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center px-3">
+                    <div class="email pb-2 h-100">
+                        <i class="icon3 bi bi-envelope-heart" style="font-size:60px; color:rgb(25, 101, 136);"></i>
+                        <p class="fw-bold h4">EMAIL</p>
+                        <br>
+                        <div class="m-3">
                             <ul class="list-unstyled footer-link text-center">
                                 <li class="">
                                     <p class="mb-0 h5">Request for Proposal</p>
@@ -303,7 +362,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+    </section>
+</div>
+<!-- SECTION THREE WITH CONTACT US END-->
+
+<br><br><br>
 
 <!-- FOOTER LAST SECTION START -->
             <section class="four">
@@ -342,7 +406,7 @@
                     <div class="container">
                         <div class="row mb-4">
                             <div class="col-md-3 mb-4 text-md-start text-center">
-                                <h3>About us</h3>
+                                <h4>About us</h4>
                                 <p class="text-muted">This website serves to be a go-to platform for any volunteer projects related to the environment
                                     environmental justice as well as an archive for any resources that caters to the environmental and
                                     ecological information.</p>
@@ -350,7 +414,7 @@
                             </div>
 
                             <div class="col-md-3 mb-4 text-md-start text-center">
-                                <h3>Contact &amp; Address</h3>
+                                <h4>Contact &amp; Address</h4>
                                 <ul class="list-unstyled footer-link text-md-start text-center">
                                     <li class="">
                                         <span class="fw-bold">LeaveNothing.Org Group</span>
@@ -368,7 +432,7 @@
                             </div>
 
                             <div class="col-md-3 mb-4 text-center">
-                                <h3>Quick Links</h3>
+                                <h4>Quick Links</h4>
                                     <ul class="list-unstyled footer-link text-center">
                                         <li><a class="footer_links text-success" href="#">Home</a></li>
                                         <li><a class="footer_links text-success" href="#">Services</a></li>
@@ -379,7 +443,7 @@
                             </div>
 
                             <div class="col-md-3 text-center">
-                                <h3>Our Social Media</h3>
+                                <h4>Our Social Media</h4>
                                     <ul class="list-unstyled footer-link d-flex justify-content-center">
                                         <li><a href="#" class=""><i class="bi bi-facebook mx-2" style="font-size:40px; color:#5D9943;"></i></a></li>
                                         <li><a href="#" class=""><i class="bi bi-twitter mx-2" style="font-size:40px; color:#5D9943;"></i></a></li>
@@ -397,7 +461,7 @@
                             <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">|</p>
                             <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a class="privacy_footer text-muted" href="#">Privacy Policy</a></p>
                             <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">|</p>
-                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a class="privacy_footer text-muted" href="#">Terms of Use</a></p>
+                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a class="privacy_footer text-muted" href="#">Site Map</a></p>
                         </div>
                     </div>
                 </footer>
@@ -406,6 +470,6 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="services.js"></script>
+<script src="help.js"></script>
 
 </html>
