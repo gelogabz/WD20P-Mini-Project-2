@@ -1,18 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="./sass/main.min.css">
-        <title>LeaveNothing.org - Home</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeaveNothing.Org - About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/IconOnlyGreen.png">
+</head>
 
-    <body>
-        <!-- Our code here -->
-        <!-- Hello -->
-    </body>
-    <script src="app.js"></script>
+<body center id="page-top">
+  <!--Navigation Bar-->
+  <section id="Navigationbar">
+    <section id="Navbar">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-2">
+        <div class="container-fluid">
+          <div class="mx-auto">
+            <nav class="navbar justify-content-center">
+              <a class="about fw-bolder px-2 active" href="index.html">About</a>
+              <a class="about fw-bolder px-2" href="Services.html">Services</a>
+              <a class="about fw-bolder px-2" href="Accounts.html">Accounts</a>
+              <a class="about fw-bolder px-2" href="Help.html">Help</a>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </section>
+  <!-- Masthead-->
+  <section id="masthead">
+    <header class="masthead">
+      <div class="container">
+        <div class="row mx-5">
+          <div class="col-md-12 col-sm-12 col-12 mx-auto justify-content-center">
+            <div class="masthead-subheading"> <img src="Assets/landing_page_images/logo-no-background.png" class="img-fluid" width="600px;"
+                width="100%">
+            </div>
+          </div>
+        </div>
+        <div class=" container-fluid">
+          <div class="row mx-2">
+            <div class="col-lg-6 col-md-8 col-12 mx-auto justify-content-center">
+              <form class="row g-3 px-5">
+                <button type="button" class="btn btn-lg btn-block mt-4 rounded-5"
+                  style="color:white; background-color: limegreen;" data-bs-toggle="modal"
+                  data-bs-target="#modalLogin">LOG-IN/SIGN-UP</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+  <!-- Modal Login -->
+  <section id="Login">
+    <div class=" modal fade" id="modalLogin" tabindex="-1" style="font-family:Poppins;">
+      <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="container d-flex justify-content-center" style="margin-top:10px">
+            <div class="row">
+              <div class="col-10">
+              </div>
+            </div>
+            <div class="form form-control" style="border:none">
+              <form class="rounder p-30 p-sm-2 pb-0" id="loginform" target="_blank" action="" method="POST">
+                <h5 style="text-align:center;margin:2%">Welcome to</h5>
+                <img src="assets/landing_page_images/logo-no-background.png" width="200px" style="display: block; margin:auto"></img>
+                <br>
+                <div class="mb-3">
+                  <label for="email" class="col-form-label col-form-label-sm">Email</label>
+                  <input type="text" id="se" name="email" class="form-control" placeholder="Enter username" required>
+                </div>
+                <div class="mb-3">
+                  <label for="psw" class="col-form-label col-form-label-sm">Password</label>
+                  <input type="password" id="sp" class="form-control" placeholder="Enter Password" name="psw" required>
+                </div>
+                <div class="form-check form-check-inline" style="padding-bottom:30px; padding-left:23px">
+                  <input class="form-check-input" type="checkbox" name="allowed" id="allowed" value="Yes">
+                  <label class="form-check-label" for="remember"
+                    style="white-space:nowrap; font-size: 14px; padding-left:5px;">Remember me</label>
+                </div>
+                <div class="clearfix " style="margin-bottom: 0; padding-bottom: 0; font-size:14px">
+                  <button class="btn btn-primary" id="submit" onclick="login()" type="submit" class="signupbtn"
+                    style="width:100%;">Continue</button>
+                  <p style="font-size:small" class="mt-4">By continuing, you agree to our <a href="#"
+                      style="color:dodgerblue">Terms of
+                      Service</a> and acknowledge that you have read our<a href="#" style="color:dodgerblue"> Privacy
+                      Policy</a>
+                    <br><br>
+                    Not yet in LeaveNothing.Org? <button type="button" class="btn btn-link"
+                      style="text-emphasis-style:bold;font-size:small" data-bs-toggle="modal"
+                      data-bs-target="#myModal">Sign-up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sign Up -->
+  <section id="SignUp">
+    <div class="modal fade" id="myModal" role="dialog" style="font-family:Poppins;">
+      <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content ">
+          <div class="container d-flex justify-content-center" style="margin-top:10px">
+            <div class="form form-control" style="border:none">
+              <form class="rounder p-30 p-sm-2 pb-0" id="loginform" target="_blank" action="" method="POST">
+                <h5 style="text-align:center;margin:2%">Register</h5>
+                <img src="assets/landing_page_images/logo-no-background.png" width="200px" style="display: block; margin:auto"></img>
+                <br>
+                <div class="mb-3">
+                  <label for="email" class="col-form-label col-form-label-sm">Username</label>
+                  <input type="text" id="re" name="email" class="form-control" placeholder="Enter username" required>
+                </div>
+                <div class="mb-3">
+                  <label for="psw" class="col-form-label col-form-label-sm">Password</label>
+                  <input type="password" id="rp" class="form-control" placeholder="Enter Password" name="psw" required>
+                </div>
+                <div class="mb-3">
+                  <label for="psw-repeat" class="col-form-label col-form-label-sm">Repeat Password</b></label>
+                  <input type="password" id="rrp" class="form-control" placeholder="Repeat Password" name="psw-repeat"
+                    required>
 
+                </div>
+                <div class="clearfix" style="margin-bottom: 0; padding-bottom: 0;">
+                  <br>
+                  <button class="btn btn-primary" onclick="register()" type="submit" class="signupbtn"
+                    style="width:100%">Continue</button>
+                  <br>
+                  <br>
+                  <p style="font-size:small">By continuing, you agree to our <a href="#" style="color:dodgerblue">Terms
+                      of Service</a> and acknowledge that you have read our<a href="#" style="color:dodgerblue"> Privacy
+                      Policy</a>
+                    <br><br>
+                    Already a member? <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                      data-bs-target="#modalLogin" style="text-emphasis-style:bold;font-size:small">Log In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="About" height="100vh">
+    <div class="container mx-auto" style="font-family:Poppins;">
+      <div class="text-center my-5">
+        <img src="assets/landing_page_images/logo-no-background.png" class="img-fluid" width="600px">
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <!--1st Item-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-9 d-flex justify-content-center">
+          <div class="card rounded-5 shadow-lg bg-body rounded text-white text-center mb-3">
+            <img class="card-img rounded-5  " src="assets/landing_page_images/nature.gif" alt="Card image" height="450">
+            <div class="card-img-overlay">
+              <p class="carousel-caption text-white fw-bolder" style="font-size: 25px;">ECO-WARRIORS</h5>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd Item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-9 d-flex justify-content-center">
+          <div class="card rounded-5 shadow-lg bg-body rounded text-white text-center mb-3">
+            <img class="card-img rounded-5  " src="assets/landing_page_images/gif.gif" alt="Card image" height="450">
+            <div class="card-img-overlay">
+              <p class="carousel-caption text-white fw-bolder" style="font-size: 25px;">NATURE</h5>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd Item -->
+        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 col-9 d-flex justify-content-center">
+          <div class="card rounded-5 shadow-lg bg-body rounded text-white text-center mb-3">
+            <img class="card-img rounded-5  " src="assets/landing_page_images/test1.gif" alt="Card image" height="450">
+            <div class="card-img-overlay">
+              <p class="carousel-caption text-white fw-bolder" style="font-size: 25px;">ENVIRONMENT</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="text-center my-5">This website serves to be a go-to platform for any volunteer projects
+        related
+        to
+        the
+        environment environmental justice as well as an archive for any resources that caters to the
+        environmental
+        and
+        ecological information.</h4>
+    </div>
+
+  </section>
+  <!-- Mission and Vision -->
+  <section id="Mission-Vision">
+    <div class=" container-fluid" style="font-family:Poppins;" height="100vh">
+      <div class=" row justify-content-center align-items-center"
+        style="background-image: linear-gradient(1000deg,#72bb53,#c8f391);">
+        <div class="col-lg-5 col-md-12 col-12 text-center g-0">
+          <img class="img-responsive fit-image" src="assets/landing_page_images/nature.jpg" alt="weight">
+        </div>
+        <div class="col-lg-7 col-md-12 col-sm-12 col-12 pt-4 text-center text-md-start text-dark">
+          <h1 class="display-1">Our Vision
+          </h1>
+          <p class="display-6">
+            To serve as a go-to platform for any volunteer projects related saving the environment.
+          </p>
+          <a href="" class="btn btn-secondary btn-large mb-5"
+            style="padding-left: 20px; padding-right: 20px; font-size:20px;">Read more</a>
+        </div>
+      </div>
+      <div class=" row justify-content-center align-items-center d-flex flex-row-reverse">
+        <div class="col-lg-5 col-md-12 col-12 text-center g-0">
+          <img class="img-responsive fit-image" src="assets/landing_page_images/nature1.jpg" alt="weight">
+        </div>
+        <div class="col-lg-7 col-md-12 col-12 mt-5 order-1 text-center text-md-start text-dark">
+          <h1>
+            <div class="display-1">Our Mission</div>
+          </h1>
+          <p class="h4">
+            ‣ To be a hotspot of information for environmental awareness
+            <br>
+            <br>
+            ‣ To cater to Eco Warriors that are looking for a platform to realize their vision and to connect with
+            others that have the same outlook and advocacy.
+            <br>
+            <br>
+            ‣ To help with the recovery and preservation of the general environment of the plane hand-in-hand with a
+            hard-won community using technology
+          </p>
+          <br>
+          <a href="" class="btn btn-secondary btn-large mb-5"
+            style="padding-left: 20px; padding-right: 20px; font-size:20px;">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Advocacies -->
+  <section class="Advocacies" style="font-family:Poppins; background-image: linear-gradient(1000deg,#72bb53,#c8f391);"
+    height=" 100vh">
+    <div id="portfolio">
+      <div class="container-fluid pb-5">
+        <p class="display-3 text-center text-white pt-4" style="text-shadow: 2px 3px black;">Advocacies</p>
+        <div class="row justify-content-center m-0 p-0 g-0">
+          <div class="col-lg-6 col-sm-6 col-12 text-center">
+            <a class="portfolio-box" title="Half Grown P75.00 &nbsp &nbsp &nbsp Full Grown P85.00">
+              <img class="img-fluid" src="assets/landing_page_images/Advocacies.gif" />
+              <p class="carousel-caption py-1 fw-bolder" style="font-size:25px;">Conservation of national resources</p>
+              <div class="portfolio-box-caption">
+                <div class="project-name px-24">Restoring and cultivating forests, grasslands, wetlands and watersheds;
+                  land-use regulation, environmental reclamation and ecological restoration</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-12 text-center">
+            <a class="portfolio-box" title="Half Grown P75.00 &nbsp &nbsp &nbsp Full Grown P85.00">
+              <img class="img-fluid" src="assets/landing_page_images/Advocacies2.gif" />
+              <p class="carousel-caption py-3 fw-bolder" style="font-size:25px;">Alternative energy</p>
+              <div class="portfolio-box-caption">
+                <div class="project-name px-2">Studying different fuels and energy systems, such as bioenergy and
+                  sustainable
+                  engineering; examining renewable energy policies within the national discussion about climate change
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-12 text-center">
+            <a class="portfolio-box" title="Half Grown P75.00 &nbsp &nbsp &nbsp Full Grown P85.00">
+              <img class="img-fluid" src="assets/landing_page_images/Advocacies3.gif" />
+              <p class="carousel-caption py-3 fw-bolder" style="font-size:25px;">Environmental Engineering</p>
+              <div class="portfolio-box-caption">
+                <div class="project-name px-2">Reducing the repercussions of technology and engineering on the natural
+                  and
+                  built environment and applying ethical principles to water purification, waste disposal, recycling and
+                  sustainable manufacturing
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-12 text-center">
+            <a class="portfolio-box" title="Half Grown P75.00 &nbsp &nbsp &nbsp Full Grown P85.00">
+              <img class="img-fluid" src="assets/landing_page_images/Advocacies4.gif" />
+              <p class="carousel-caption py-3 fw-bolder" style="font-size:24px;">Oceanic and atmospheric sciences</p>
+              <div class="portfolio-box-caption">
+                <div class="project-name px-2">Working with government agencies, consultancies and aviation companies to
+                  maintain the health of the oceans and atmosphere
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partners -->
+  <section>
+    <div class="container-fluid" style="font-family:Poppins;" style="height:100vh">
+      <div class="row justify-content-center align-items-center g-0">
+        <p class="display-3 text-center text-dark py-5">Our Partners</p>
+        <div class="col-lg-3 col-md-6 col-6 text-center d-flex justify-content-center my-4">
+          <div class="images rounded-2">
+            <a href="https://haribon.org.ph/">
+              <img src="assets/landing_page_images/Haribon_Foundation.png" class="img-fluid imgs px-3 py-4 bg-white">
+              <h6 class="text-center text-white fw-bolder" style="font-size:19px;"> Haribon Foundation</h6>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center ">
+          <div class="images rounded-2">
+            <a href="https://www.greenpeace.org/philippines/">
+              <img src="assets/landing_page_images/greenpeace.jpg " class="img-fluid imgs bg-white">
+              <h6 class=" text-center text-white fw-bolder" style="font-size:19px;"> Green Peace</h6>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center ">
+          <div class="images rounded-2">
+            <a href="https://www.worldwildlife.org/">
+              <img src="assets/landing_page_images/WWF.png " class="img-fluid imgs bg-white px-3 py-4">
+              <h6 class=" text-center text-white fw-bolder" style="font-size:19px;"> World Wildlife Fund</h6>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center ">
+          <div class="images rounded-2">
+            <a href="https://www.savephilippineseas.org/">
+              <img src="assets/landing_page_images/sps.jpg " class="img-fluid imgs bg-white px-3 py-4">
+              <h6 class="text-center text-white fw-bolder" style="font-size:19px;"> Save Philippines
+                Seas</h6>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center my-2 g-0">
+          <div class=" col-lg-3 col-md-6 col-6 d-flex justify-content-center my-4">
+            <div class="images rounded-2">
+              <a href="https://www.pnpcsi.org/">
+                <img src="assets/landing_page_images/PNPS.png" class="img-fluid imgs px-3 py-4 bg-white">
+                <h6 class=" text-center text-white fw-bolder" style="font-size:19px;"> Philippine Native
+                  Plants Conservation Society</h6>
+              </a>
+            </div>
+          </div>
+          <div class=" col-lg-3 col-md-6 col-6 d-flex justify-content-center ">
+            <div class="images rounded-2">
+              <a href="https://www.wavesforwater.org/philippines">
+                <img src="assets/landing_page_images/wavesforwater.png" class="img-fluid imgs bg-white">
+                <h6 class="text-center text-white fw-bolder" style="font-size:19px;"> Waves for Water</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center ">
+            <div class="images rounded-2">
+              <a href="http://www.motherearthphil.org/">
+                <img src="assets/landing_page_images/motherearthfoundation.png " class="img-fluid imgs bg-white px-3 py-4 bg-white">
+                <h6 class=" text-center text-white fw-bolder" style="font-size:19px;"> Mother Earth
+                  Foundation</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 d-flex justify-content-center ">
+            <div class="images rounded-2">
+              <a href="https://www.earthisland.org/">
+                <img src="assets/landing_page_images/EarthIsland.png" class="img-fluid imgs bg-white px-3 py-4">
+                <h6 class="text-center text-white fw-bolder" style="font-size:19px;"> Earth Island
+                  Institute</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="four">
+    <br>
+    <div>
+      <div class=" container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-12 mb-4">
+            <h1 class="headings">
+              Get news &amp; updates
+            </h1>
+          </div>
+          <div class="col-md-12">
+            <form action="" method="">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <input type="text" class="input1 form-control" placeholder="Your name here">
+                </div>
+                <div class="col-md-4 mb-4">
+                  <input type="email" class="input2 form-control" placeholder="Your Email here">
+                </div>
+                <div class="col-md-4 mb-4">
+                  <button class="subscribe_btn btn w-100 text-light" type="" value="">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+      <footer class="myfooter px-5 pt-5 pb-2"
+        style="font-family:Poppins;">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-3 mb-4 text-md-start text-center">
+              <h3>About us</h3>
+              <p class="text-muted">This website serves to be a go-to platform for any volunteer projects related to the
+                environment
+                environmental justice as well as an archive for any resources that caters to the environmental and
+                ecological information.</p>
+              <p><a class="click_footer text-success" href="#"><u>Click here to learn more</u></a></p>
+            </div>
+            <div class="col-md-3 mb-4 text-md-start text-center">
+              <h3>Contact &amp; Address</h3>
+              <ul class="list-unstyled footer-link text-md-start text-center">
+                <li class="">
+                  <span class="fw-bold">LeaveNothing.Org Group</span>
+                  <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
+                </li>
+                <li class="">
+                  <span class="fw-bold">LeaveNothing.Org Main Office</span>
+                  <p class="text-muted">146 4th Flr. Rima Building Filinvest, Alabang, Muntinlupa</p>
+                </li>
+                <li class="">
+                  <span class="fw-bold">LeaveNothing.Org Volunteers</span>
+                  <p class="text-muted">4526 Beligma street Pasig city, Metro Manila</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+              <h3>Quick Links</h3>
+              <ul class="list-unstyled footer-link text-center">
+                <li><a class="footer_links text-success" href="#">Home</a></li>
+                <li><a class="footer_links text-success" href="#">Services</a></li>
+                <li><a class="footer_links text-success" href="#">Accounts</a></li>
+                <li><a class="footer_links text-success" href="#">Help</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <h3>Our Social Media</h3>
+              <ul class="list-unstyled footer-link d-flex justify-content-center">
+                <li><a href="#" class=""><i class="bi bi-facebook mx-2" style="font-size:40px; color:black;"></i></a>
+                </li>
+                <li><a href="#" class=""><i class="bi bi-twitter mx-2" style="font-size:40px; color:black;"></i></a>
+                </li>
+                <li><a href="#" class=""><i class="bi bi-github mx-2" style="font-size:40px; color:black;"></i></a>
+                </li>
+                <li><a href="#" class=""><i class="bi bi-instagram mx-2" style="font-size:40px; color:black;"></i></a>
+                </li>
+              </ul>
+              <img class="img-fluid" src="assets/landing_page_images/logo-no-background.png">
+            </div>
+          </div>
+          <div class=" text-md-start text-center">
+            <p class="linesafooter mb-0"></p>
+            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">
+              Copyright
+              ⓒ2022 LeaveNothing.Org</p>
+            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">|</p>
+            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a
+                class="privacy_footer text-muted" href="#">Privacy Policy</a></p>
+            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">|</p>
+            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a
+                class="privacy_footer text-muted" href="#">Terms of Use</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="main.js">
+</script>
 </html>
