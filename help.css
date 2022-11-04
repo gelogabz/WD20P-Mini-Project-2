@@ -4,49 +4,75 @@ body{
     font-family:poppins !important;
 }
 
-/* NAVBAR START */
-.about {
-    color: limegreen;
-    text-shadow: 2px 2px black;
-    font-size: 17px;
+/* NavBar Options start */
+.about{
+    color:lightgreen; 
+    font-family:Poppins;
+    text-shadow: 2px 2px black; 
+    font-size:17px;
     text-decoration: none;
 }
-
-.about:hover {
-    color: white;
+.about:hover{
+    color:white;
 }
-
-.about:link {
-    color: white;
+.about:link{
+    color:white;
 }
-/* NAVBAR END */
+/* NavBar Options end */
 
-/* SECTION ONE */
 
+/* SECTION ONE START */
 .first_sec{
     background-color: rgba(255, 254, 254,0.6);
     border-radius: 35px;
 }
 
-.address{
-    background-color: rgba(255, 254, 254,0.6);
-    border-radius: 35px;
+.header_body{
+    padding: 20px;
+    
 }
-.phone{
-    background-color: rgba(255, 254, 254,0.6);
-    border-radius: 35px;
-}
-.email{
-    background-color: rgba(255, 254, 254,0.6);
-    border-radius: 35px;
+.heading1{
+    font-size: 40px;
+    margin-bottom: 1px;
+    color: #3f8321;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    -webkit-animation: heading1 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: heading1 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-/* SUBTITLE OF HELP HEADING */
+@-webkit-keyframes heading1 {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes heading1 {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* SUBTITLE OF HELP HEADINGS */
 .subtitle1{
-    font-size: 20px;
+    font-size: 17px;
     line-height: 25px;
     margin-bottom: 35px;
 }
+
 /* BUTTON FOR SUGGESTION FORM START*/
 .help_btn{
     color: white;
@@ -73,10 +99,9 @@ body{
 }
 /* BUTTON FOR SUGGESTION FORM END*/
 
+/* MODAL START */
 /* SUGGESTION FORM INPUTS */
-
-
-/* BUTTON ON MODAL */
+/* BUTTON ON MODAL START */
 .modal_btn{
     color:white;
     background-color: #5D9943;
@@ -86,11 +111,23 @@ body{
     padding-bottom: 9px;
     padding-left: 40px;
     padding-right: 40px;
-    transition: background-color 0.30s;
+    transition: background-color 0.30s ,padding 0.40s, margin 0.40s;
 }
 .modal_btn:hover{
     background-color: #3f8321;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 11px ;
+    padding-bottom: 11px ;
+    margin-left: 0px;
+    margin-right: 0px;
 }
+.modal-btn:active{
+    opacity: 0.8;
+    color: #1b94d1;
+}
+/* BUTTON ON MODAL END */
+
 .modal-header{
     background-color: #e8f8e1;
     border: none !important;
@@ -101,26 +138,78 @@ body{
 .modal-footer{
     background-color: #e8f8e1 !important;
 }
+/* MODAL END */
+/* SECTION ONE END */
 
-/* FAQ labels */
 
-.name_faq{
+/*SECTION TWO START */
+.two{
+    background-color: rgba(255, 254, 254,0.6);
+    border-radius: 35px;
+    padding-top:20px;
+    padding-right:30px;
+    padding-left:30px;
+    padding-bottom:60px;
+}
+
+.faq_heading{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #3f8321;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.name_faq_link{
     color: #34aeeb;
     font-weight: bold;
 }
 
-.accordion-item{
-    border-radius: 10px !important;
-}
 .accordion-button{
-    background-color: #eef5ec !important;
-    border-radius: 10px !important;
-
+    background-color: rgba(95, 188, 231, 0.6) !important;
+    color: rgb(56, 55, 55) !important;
+}
+.accordion-button:active{
+    border: none;
 }
 .accordion-body{
-    background-color: #eaf0ea !important;
-    border-radius: 10px !important;
+    background-color: #ffffff !important;
 }
+
+.acc3_body{
+    font-size: 12px;
+}
+/*SECTION TWO END */
+
+/*SECTION THREE START */
+.touch{
+    font-size: 40px;
+    margin-bottom: 1px;
+    color: #3f8321;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+.three{
+    background-color: rgba(255, 254, 254,0.6);
+    border-radius: 35px;
+    padding-top:20px;
+    padding-right:30px;
+    padding-left:30px;
+    padding-bottom:60px;
+}
+.address{
+    background-color: rgba(147, 215, 247, 0.6);
+    border-radius: 35px;
+}
+.phone{
+    background-color: rgba(147, 215, 247, 0.6);
+    border-radius: 35px;
+}
+.email{
+    background-color: rgba(147, 215, 247, 0.6);
+    border-radius: 35px;
+}
+/*SECTION THREE END */
 
 /* FOOTER START */
 .myfooter{
