@@ -39,3 +39,7 @@ function moveRight() {
 btnLeft.addEventListener("click", moveLeft);
 btnRight.addEventListener("click", moveRight);
 window.addEventListener("resize", moveSlider);
+
+
+
+//sample vid carousel
