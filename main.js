@@ -47,6 +47,8 @@ function register(){
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
         document.getElementById("rrp").value="";
+        document.getElementById("SignUp").style.display = "none";
+
         return;
     }
     else{
@@ -85,4 +87,11 @@ function login(){
         location.reload();
         return ;
     }
+}
+
+function suggestion(){
+    
+
+
+
 }
