@@ -23,7 +23,7 @@ function register(){
     var passwordRetype = document.getElementById("rrp").value;
     
     if (email == ""){
-        alert("Email required.");
+        alert("Username required.");
         return ;
     }
     else if (password == ""){
@@ -43,10 +43,12 @@ function register(){
     else if(emailArray.indexOf(email) == -1){
         emailArray.push(email);
         passwordArray.push(password);
-        alert(email + " Thanks for registration. \nTry to login Now");
+        alert(email + " " + "Thanks for registration. \n Try to login Now");
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
         document.getElementById("rrp").value="";
+        document.getElementById("SignUp").style.display = "none";
+
         return;
     }
     else{
@@ -62,10 +64,10 @@ function login(){
 
     if(emailArray.indexOf(email) == -1){
         if (email == ""){
-            alert("Email required.");
+            alert("Username required.");
             return ;
         }
-        alert("Email does not exist.");
+        alert("Username does not exist.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
         return ;
@@ -85,4 +87,11 @@ function login(){
         location.reload();
         return ;
     }
+}
+
+function suggestion(){
+    
+
+
+
 }
