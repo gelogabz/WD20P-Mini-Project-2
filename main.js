@@ -18,9 +18,9 @@ var regBox = document.getElementById("register");
 
 function register(){
   event.preventDefault();
-    var email = document.getElementById("re").value;
-    var password = document.getElementById("rp").value;
-    var passwordRetype = document.getElementById("rrp").value;
+    var email = document.getElementById("re").value.trim();
+    var password = document.getElementById("rp").value.trim();
+    var passwordRetype = document.getElementById("rrp").value.trim();
     
     if (email == ""){
         alert("Username required.");
@@ -58,8 +58,8 @@ function register(){
 }
 function login(){
   event.preventDefault();
-    var email = document.getElementById("se").value;
-    var password = document.getElementById("sp").value;
+    var email = document.getElementById("se").value.trim();
+    var password = document.getElementById("sp").value.trim();
     var i = emailArray.indexOf(email);
 
     if(emailArray.indexOf(email) == -1){
@@ -84,14 +84,7 @@ function login(){
         alert(email + " Login Sucessfully. Welcome to our Website.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
-        location.reload();
+        window.location= "Accounts.html";
         return ;
     }
-}
-
-function suggestion(){
-    
-
-
-
 }
