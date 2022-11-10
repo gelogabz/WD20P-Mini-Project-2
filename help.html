@@ -82,27 +82,26 @@
                 <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
                     <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
                 </h5>
-            <button type="button" class="btn-close"
-            data-bs-toggle="modal" data-bs-target="#exampleModal2ko"></button>
+            <button onclick="closebtn();" id="close" type="button" class="btn-close"
+            ></button>
             </div>
             
             <div class="modal-body">
                 <form id="formko">
                     <div class="row justify-content-center">
                         <div class="col-md-6 my-2">
-                            <div class="form-floating success">
-                                <input id="fname" type="text" class="form-control" placeholder="Your Name" id="floatingTextarea">
-                                <label class="text-muted" for="floatingTextarea">Your Name</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                            <div class="form-floating">
+                                <input onkeyup="yourname();" id="fname" type="text" class="form-control" placeholder="Your Name" id="floatingTextarea">
+                                <label class="text-muted" for="floatingTextarea">Your Name</label> 
+                                <p class="text-danger ps-1 my-0" id="error1"></p>
                             </div>
+                            
                         </div>
                         <div class="col-md-6 my-2">
-                            <div class="form-floating error">
-                                <input id="lname" type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
+                            <div class="form-floating">
+                                <input onkeyup="Lastname();" id="lname" type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
                                 <label class="text-muted" for="floatingTextarea">Last Name</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                <p class="text-danger ps-1 my-0" id="error2"></p>
                             </div>
                         </div>
                     </div>
@@ -110,34 +109,32 @@
                     <div class="row">
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input id="email" type="email" class="form-control" placeholder="Email" id="floatingTextarea">
-                                <label class="text-muted" for="floatingTextarea">Email</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                <input id="inputEmail"  onkeyup="emailko();" type="email" class="form-control" placeholder="Email" id="floatingTextarea">
+                                <label for="inputEmail" class="text-muted" for="floatingTextarea">Email</label>
+                                <p class="text-danger ps-1 my-0" id="error3"></p>
                             </div>
                         </div>
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input id="contact" type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
+                                <input id="contacts" onkeyup="contactNo();" type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
                                 <label class="text-muted" for="floatingTextarea">Contact no.</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                <p class="text-danger ps-1 my-0" id="error4"></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-floating my-2">
-                        <textarea id="mess" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea onkeyup="message();" id="mess" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                         <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
-                        <i class="bi bi-shield-fill-exclamation"></i>
-                        <i class="bi bi-check-circle-fill"></i>
+                        <p class="text-danger ps-1 my-0" id="error5"></p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
                     </div>
                 </form>
             </div>
                 
-            <div class="modal-footer d-flex justify-content-center">
-                <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
-            </div>
+            
 
         </div>
     </div>
