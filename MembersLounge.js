@@ -178,3 +178,5 @@ function addProduct() {
 }
 
 //holdval_ document.getElementById('editButton').style.display = "none"; //checks in case of disabled button.
+
+//end of code
