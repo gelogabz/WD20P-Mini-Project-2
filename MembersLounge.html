@@ -90,7 +90,21 @@
                                 <form class="form-horizontal text-start m-2 p-4 d-inline-block" role="form" id="modalForm">
                                     <div class="form-group">
                                         <div id="showImage"></div>
-                                        <input for="showImage" type="file" />
+                                        <input for="showImage" type="file" onchange="pic();" />
+                                        <script>
+                                            function pic(){
+                                                let a = new FileReader();
+                                                    a.addEventListener("load", function (){
+                                                    sessionStorage.setItem("img",a.result);
+                                                    img();
+                                                    })
+                                                    a.readAsDataURL(event.target.files[0]);
+                                            };
+                                            function img(){
+                                                let xx = document.getElementById("showImage");
+                                                xx.innerHTML = "<img src=" + (sessionStorage.getItem("img")) + "style='width:50px;'>";
+                                            }
+                                        </script>
                                     </div>
                                     <div class="form-group">
                                         <label for="titleName">Title</label>

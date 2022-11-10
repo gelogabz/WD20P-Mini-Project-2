@@ -3,46 +3,46 @@ function randomNumberID() {
 }
 $(document).ready(
     function () {
-    getpostsLists();
-    document.getElementById('modalSubmit').addEventListener('click', modalSubmit);
-
-    function modalSubmit(e) {
-        let productTempId = randomNumberID();
-        let showImage = document.getElementById('showImage').value;
-        let titleName = document.getElementById('titleName').value;
-        let expDescription = document.getElementById('expDescription').value;
-        let Category = document.getElementById('Category').value;
-
-        const productId = productTempId + titleName + randomNumberID(); //Used to give each product a unique id
-        if (titleName !== '' && expDescription !== '') {
-            let newProduct = {
-                id: productId,
-                img: showImage,
-                name: titleName.toUpperCase(),
-                category: Category,
-                description: expDescription
-            };
-
-            //Add new product to localStorage. The localStorage key for all the product is postsList'
-            if (localStorage.getItem("postsList") === null || localStorage.getItem("postsList") === [] || localStorage.getItem("postsList") === undefined) {
-                let postsList = [];
-                postsList.push(newProduct);
-                localStorage.setItem("postsList", JSON.parse(postsList));
-            } else {
-                let postsList = JSON.parse(localStorage.getItem("postsList"));
-                postsList.push(newProduct);
-                localStorage.setItem("postsList", JSON.stringify(postsList));
-            }
-        } else {
-            alert('All fields are required. Please check your entries again');
-        }
         getpostsLists();
+        document.getElementById('modalSubmit').addEventListener('click', modalSubmit);
 
-        resetForm();
-        e.preventDefault();
-    }
+        function modalSubmit(e) {
+            let productTempId = randomNumberID();
+            let showImage = sessionStorage.getItem('img');
+            let titleName = document.getElementById('titleName').value;
+            let expDescription = document.getElementById('expDescription').value;
+            let Category = document.getElementById('Category').value;
 
-}); //DocumentBody end tag
+            const productId = productTempId + titleName + randomNumberID(); //Used to give each posts
+            if (titleName !== '' && expDescription !== '') {
+                let newProduct = {
+                    id: productId,
+                    img: showImage,
+                    name: titleName.toUpperCase(),
+                    category: Category,
+                    description: expDescription
+                };
+
+                //Add new posts to localStorage. The localStorage key for all the posts is postsList'
+                if (localStorage.getItem("postsList") === null || localStorage.getItem("postsList") === [] || localStorage.getItem("postsList") === undefined) {
+                    let postsList = [];
+                    postsList.push(newProduct);
+                    localStorage.setItem("postsList", JSON.parse(postsList));
+                } else {
+                    let postsList = JSON.parse(localStorage.getItem("postsList"));
+                    postsList.push(newProduct);
+                    localStorage.setItem("postsList", JSON.stringify(postsList));
+                }
+            } else {
+                alert('All fields are required. Please check your entries again');
+            }
+            getpostsLists();
+
+            resetForm();
+            e.preventDefault();
+        }
+
+    }); //DocumentBody end tag
 
 //get the data stored in the localStorage for display on load
 function getpostsLists() {
@@ -156,7 +156,7 @@ function addProduct() {
     let expDescription = document.getElementById('expDescription').value;
     let Category = document.getElementById('Category').value;
 
-    const productId = productTempId + titleName + randomNumberID(); //Used to give each product a unique id
+    const productId = productTempId + titleName + randomNumberID(); //Used to give each post
     if (titleName !== '' && expDescription !== '') {
         let newProduct = {
             id: productId,
