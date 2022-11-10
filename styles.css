@@ -48,7 +48,10 @@ header.masthead {
 .about:hover{
     color:white;
 }
+.active{
+    color:white;
 
+}
 /* Fit image */
 
 .fit-image{
