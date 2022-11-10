@@ -1,6 +1,6 @@
 
 body{
-    background-image: linear-gradient(1000deg,#d1ebb0,#dbf5d2);
+    background-image: linear-gradient(1000deg, #bbecba, #98cde7);
     font-family:poppins !important;
 }
 
@@ -102,6 +102,45 @@ body{
 /* MODAL START */
 /* SUGGESTION FORM INPUTS */
 /* BUTTON ON MODAL START */
+
+.form-floating .bi{
+    visibility: hidden;
+}
+.form-floating{
+    position: absolute;
+}
+
+.bi{
+    position: relative;
+    font-size: 18px;
+    bottom: 41px;
+    left: 490px;
+}
+.bi{
+    position: relative;
+    font-size: 18px;
+    bottom: 41px;
+    left: 490px;
+}
+
+/* .form-floating.success input{
+    border-color: #3f8321;
+}
+
+.form-floating.error input{
+    border-color: #e74c3c; 
+}*/
+
+/* .form-floating.success .bi-check-circle-fill{
+    color: #3f8321;
+    visibility: visible;
+}
+
+.form-floating.error .bi-shield-fill-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+} */
+
 .modal_btn{
     color:white;
     background-color: #5D9943;
@@ -137,6 +176,8 @@ body{
 }
 .modal-footer{
     background-color: #e8f8e1 !important;
+   
+
 }
 /* MODAL END */
 /* SECTION ONE END */
@@ -166,7 +207,7 @@ body{
 }
 
 .accordion-button{
-    background-color: rgba(95, 188, 231, 0.6) !important;
+    background-color: #8BC53F !important;
     color: rgb(56, 55, 55) !important;
 }
 .accordion-button:active{

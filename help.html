@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS FILE-->
     <link rel="stylesheet" href="help.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -42,7 +42,7 @@
         </div>
     </nav>
 </section>
-    <!--Navigation-Bar END-->
+    Navigation-Bar END-->
 
 <br><br>
 
@@ -74,83 +74,75 @@
                     </div>
                     <!-- HEADINGS END -->
 
-                    <!-- MODAL SUGGESTION FORM START -->                      
-                    <div class="modal top fade" id="exampleModal1ko" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
-                        <div class="modal-dialog modal-xl modal-frame">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
-                                        <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
-                                    </h5>
-                                <button onclick="(closeButton());" type="button" class="btn-close"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal2ko"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-6 my-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" placeholder="First Name" id="floatingTextarea">
-                                                <label class="text-muted" for="floatingTextarea">First Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 my-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
-                                                <label class="text-muted" for="floatingTextarea">Last Name</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6 my-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" placeholder="Email" id="floatingTextarea">
-                                                <label class="text-muted" for="floatingTextarea">Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 my-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
-                                                <label class="text-muted" for="floatingTextarea">Contact no.</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-floating my-2">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                        <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer d-flex justify-content-center">
-                                    <button type="button" class="modal_btn">Submit Suggestions</button>
-                                </div>
-
+<!-- MODAL SUGGESTION FORM START -->                      
+<div class="modal top fade" id="exampleModal1ko" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+    <div class="modal-dialog modal-xl modal-frame">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
+                    <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
+                </h5>
+            <button type="button" class="btn-close"
+            data-bs-toggle="modal" data-bs-target="#exampleModal2ko"></button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="formko">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 my-2">
+                            <div class="form-floating success">
+                                <input id="fname" type="text" class="form-control" placeholder="Your Name" id="floatingTextarea">
+                                <label class="text-muted" for="floatingTextarea">Your Name</label>
+                                <i class="bi bi-shield-fill-exclamation"></i>
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <div class="form-floating error">
+                                <input id="lname" type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
+                                <label class="text-muted" for="floatingTextarea">Last Name</label>
+                                <i class="bi bi-shield-fill-exclamation"></i>
+                                <i class="bi bi-check-circle-fill"></i>
                             </div>
                         </div>
                     </div>
-                    <!-- MODAL SUGGESTION FORM END --> 
 
-                    <!--MODAL OF MODAL SUGGESTION CLOSE START-->
-                    <div class="modal" id="exampleModal2ko" tabindex="-1">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title">Information</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row">
+                        <div class="col-md-6 my-2">
+                            <div class="form-floating">
+                                <input id="email" type="email" class="form-control" placeholder="Email" id="floatingTextarea">
+                                <label class="text-muted" for="floatingTextarea">Email</label>
+                                <i class="bi bi-shield-fill-exclamation"></i>
+                                <i class="bi bi-check-circle-fill"></i>
                             </div>
-                            <div class="modal-body">
-                              <p>Save Changes ?</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                    <!--MODAL OF MODAL SUGGESTION CLOSE END-->
+                        <div class="col-md-6 my-2">
+                            <div class="form-floating">
+                                <input id="contact" type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
+                                <label class="text-muted" for="floatingTextarea">Contact no.</label>
+                                <i class="bi bi-shield-fill-exclamation"></i>
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating my-2">
+                        <textarea id="mess" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
+                        <i class="bi bi-shield-fill-exclamation"></i>
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                </form>
+            </div>
+                
+            <div class="modal-footer d-flex justify-content-center">
+                <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- MODAL SUGGESTION FORM END --> 
                 </div>
                 
                 <div class="col-md-5 text-center text-md-end my-3">
@@ -372,7 +364,7 @@
 <br><br><br>
 
 <div w3-include-html="footer.html"></div>
-
+ 
 <!-- FOOTER LAST SECTION START
             <section class="four">
                 <br>
@@ -470,7 +462,7 @@
                     </div>
                 </footer>
             </section>
- FOOTER LAST SECTION END -->
+ FOOTER LAST SECTION END-->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
