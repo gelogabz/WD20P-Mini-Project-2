@@ -34,6 +34,7 @@ header.masthead {
     border-style: solid;
     font-family: 'Oleo Script', cursive;
 }
+
 /* NavBar Options */
 .about{
     color:lightgreen; 
@@ -54,12 +55,19 @@ header.masthead {
 }
 /* Fit image */
 
+h2{
+    font-family:var(--primaryheader-font);
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 4em;
+    text-shadow: 2px 3px 6px rgba(54,21,0, 0.4);
+}
+
 .fit-image{
     width: 100%;   
     object-fit: cover;
     height: 100vh; /* only if you want fixed height */
 }
-
 /* Modal */
   .modal-footer {
     background-color: #f9f9f9;
