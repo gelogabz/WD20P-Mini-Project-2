@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="MembersLounge.css">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <title>LeaveNothing.org - Home</title>
+</head>
+
+<body>
+    <div class="header_wrapper">
+        <header></header>
+        <div class="cols_container">
+            <div class="left_col h-100 d-lg-inline-block">
+                <div class="img_container ">
+                    <img src="assets/pexels-photo-3217911.jpeg" alt="Traveler" />
+                    <span></span>
+                </div>
+                <h2>Kick Buttowski</h2>
+                <p>Traveler</p>
+                <p>kick@example.com</p>
+
+                <ul class="about">
+                    <li><span>200</span>Followers</li>
+                    <li><span>550</span>Following</li>
+                    <li><span>40</span>Posts</li>
+                </ul>
+
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum perspiciatis
+                        consequuntur, illo blanditiis soluta, harum excepturi similique maxime ad omnis eveniet
+                        laboriosam repellendus, sequi fuga temporibus autem? Molestias, beatae.
+                    </p>
+
+                    <ul>
+                        <li><a href="" class="bi bi-twitter"></a></li>
+                        <li><a href="" class="bi bi-pinterest"></a></li>
+                        <li><a href="" class="bi bi-facebook"></a></li>
+                        <li><a href="" class="bi bi-github"></a></li>
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <a href="" class="button">Edit Profile</a>
+                </div>
+            </div>
+            <div class="right_col p-5 m-1 h-100 mx-1 ">
+                <nav>
+                    <ul>
+                        <li><a href="#">Travels & Experience</a></li>
+                        <li><a href="#">Calendar</a></li>
+                    </ul>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#addNewPost"><i
+                            class="bi bi-pencil-square m-1 modalone" id="createPost"></i>Post</button>
+                </nav>
+                <div class="modal fade" id="addNewPost" tabindex="-1" role="dialog" aria-labelledby="addNewPostLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                            <!--Modal Header-->
+                            <div class="modal-header">
+                                <img class="imgLogo h-25 w-25"
+                                    src="../WD20P-Mini-Project-2-master/assets/IconOnlyGreen.png">
+                                <h4 class="modal-title left" id="addNewPostLabel">
+                                    <i class="bi bi-pencil-square m-1"></i> Create New Post
+                                </h4>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close">
+
+                                </button>
+                            </div>
+                            <!--end of header-->
+                            <div class="modal-body">
+                                <form class="form-horizontal text-start m-2 p-4 d-inline-block" role="form" id="modalForm">
+                                    <div class="form-group">
+                                        <div id="showImage"></div>
+                                        <input for="showImage" type="file" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="titleName">Title</label>
+                                        <input id="titleName" type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="expDescription">Experiences</label>
+                                        <textarea id="expDescription" type="text" style="height: 100px"></textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="Category">Travel Category</label>
+                                        <select id="Category" class="custom-select">
+                                            <option value="Mountaineering">Mountaineering</option>
+                                            <option value="Diving">Diving</option>
+                                            <option value="Camping">Camping</option>
+                                            <option value="Snorkeling">Snorkeling</option>
+                                            <option value="Trekking">Trekking</option>
+                                            <option value="Hiking">Hiking</option>
+                                            <option value="Canyoning">Canyoning</option>
+                                            <option value="Rafting">Rafting</option>
+                                            <option value="Surfing">Surfing</option>
+                                            <option value="Caving">Caving</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer align-content-center" id="modalFooter">
+                                        <button type="button" class="btn btn-outline-danger btn-sm m-2"
+                                            data-bs-dismiss="modal" id="modalClose"><i class="bi bi-x-square-fill"></i> Close
+                                        </button>
+                                        <button type="button" class="btn btn-outline-success btn-sm m-2"
+                                            id="modalSubmit"><i class="bi bi-save"></i> Submit </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <form>
+                    <div class="input-field">
+                      <input id="search" type="search" required class="autocomplete" placeholder="Search Experience">
+                    </div>
+                  </form>
+                <h4 class="card-title" > Posts</h4>
+                <ul class="list-group" id="postDisplay">
+                  <!-- codes  here supplied via JS-->
+                </ul>
+            </div>
+                
+            
+        </div>
+    </div>  
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $(".button-collapse").sideNav();
+      $("#aboutUsModal").modal();
+      $("input.autocomplete").autocomplete({
+        data:{
+          "Photo Plaques":null, "FineArt Prints":null, "Retro prints": null, "Photo Prints": null, "Mini Reporello": null,
+          "Card":null, "Folded Card(Up Down)":null, "Folded Card(Left Right)":null, "Double Folded Card":null, "Memorial Card":null,
+          "Wall Decors":null, "Alu-Dibond":null, "Gallery Print":null, "Floating Frame":null, "Envelopes":null
+        },
+        limit:7,
+        minLength:1
+      });
+    });
+  </script>
+  <script src="MembersLounge.js"></script>
+</html>
