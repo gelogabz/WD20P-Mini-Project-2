@@ -98,7 +98,7 @@ function newsletter(){
         alert("Email required.");
     }
     else{
-        alert("Successfully Submitted. Thank you");
+        alert("Successfully Submitted Email and Name Thank you");
         window.location="index.html"; 
     }
 };
