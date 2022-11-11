@@ -253,3 +253,32 @@ h6 {
 }
 
 /* / FOOTER END */
+
+.green_btn{
+    color: white;
+    font-size:18px;
+    background-color: #5D9943;
+    border-radius: 30px;
+    border-width: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.20s, padding 0.40s, margin 0.40s;
+    text-decoration: none;
+}
+.green_btn:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white !important;
+}
+.green_btn:active{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
