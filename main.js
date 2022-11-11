@@ -45,9 +45,7 @@ function register(){
         emailArray.push(email);
         passwordArray.push(password);
         alert(email + ", " + "thank you for registering. \n Try to login now");
-        document.getElementById("re").value ="";
-        document.getElementById("rp").value="";
-        document.getElementById("rrp").value="";
+        window.location = "index.html";
         return;
     }
     else{
@@ -84,7 +82,7 @@ function login(){
         alert(email + " Login Sucessfully. Welcome to our Website.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
-        window.location= "Accounts.html";
+        window.location= "MembersLounge.html";
         return ;
     }
 }
