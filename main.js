@@ -101,4 +101,4 @@ function newsletter(){
         alert("Successfully Submitted. Thank you");
         window.location="index.html"; 
     }
-}
+};
