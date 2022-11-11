@@ -42,7 +42,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    max-height: auto;
 
   
     font-family: var(--maincontent-font);
@@ -62,7 +62,7 @@ a {
 
 .header_wrapper header {
     width: 100%;
-    background: url(assets/img-bg.jpg) no-repeat 50% 20% / cover;
+    background: url(assets/img2.jpg) no-repeat 50% 20% / cover;
     min-height: calc(100px + 15vw);
 }
 
@@ -93,7 +93,7 @@ a {
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    display: block;
+    
     box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
 }
 
@@ -124,12 +124,12 @@ a {
 .header_wrapper .cols_container .left_col .about {
     justify-content: space-between;
     position: relative;
-    margin: 35px 0;
+    margin: 15px 0;
     padding: -10px;
 }
 
 .header_wrapper .cols_container .left_col .about li {
-    display: flex;
+  
     flex-direction: column;
     color: #818181;
     font-size: 0.9rem;
@@ -142,13 +142,14 @@ a {
 }
 
 .header_wrapper .cols_container .left_col .about::after {
-    position: absolute;
+    position: center;
     content: "";
     bottom: -16px;
-    display: block;
+   
     background: #ccc;
     height: 1px;
-    width: 80%;
+    width: 100%;  
+    margin-top: 1rem;
 }
 
 .header_wrapper .cols_container .content p {
@@ -188,7 +189,6 @@ a {
 }
 
 .header_wrapper .cols_container .right_col nav ul {
-    display: flex;
     gap: 20px;
     flex-direction: column;
     text-align: center;
@@ -199,7 +199,6 @@ a {
     text-transform: uppercase;
     font-family: var(--secondaryheader-font);
     color: var(--primary-color2);
-    display: inline-block;
     position: relative;
     text-align: center;
 }
@@ -250,15 +249,7 @@ a {
     z-index: -1;
 }
 
-.button::after {
-    height: 100%;
-    left: -35%;
-    top: 0;
-    transform: skew(50deg);
-    transition-duration: 0.6s;
-    transform-origin: top left;
-    width: 0;
-}
+
 
 .header_wrapper .cols_container .right_col nav button:hover:after {
     height: 100%;
@@ -272,27 +263,16 @@ a {
 
 
 .header_wrapper .cols_container .right_col .photos {
-    display: grid;
+    
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
-.header_wrapper .cols_container .right_col .photos img {
-    max-width: 100%;
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s ease-out 100ms;
-    cursor: pointer;
-}
 
-.header_wrapper .cols_container .right_col .photos img:hover {
-    transform: scale(1.05)
-}
 
-.modal-body .form-horizontal{
-    width: 100%;
-}
+
+
+
 
 /* FOOTER START /  / */
 
@@ -383,7 +363,7 @@ a {
     }
 
     .header_wrapper .cols_container .right_col .photos {
-        height: auto;
+        
         overflow: auto;
         padding: 0 0 30px;
     }
