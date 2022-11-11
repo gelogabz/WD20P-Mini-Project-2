@@ -42,5 +42,7 @@ window.addEventListener("resize", moveSlider);
 
 
 
-//sample vid carousel
+//sample vid carousel autopause
 
+
+//TESTING
