@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS FILE-->
     <link rel="stylesheet" href="help.css">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./sass/main.min.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -21,44 +22,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-
 <body>
-
-        <section id="Navbar">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-2">
-                <div class="container-fluid">
-                    <div class="mx-auto">
-                        <nav class="navbar justify-content-center">
-                            <a class="about fw-bolder px-2" href="index.html">About</a>
-                            <a class="about fw-bolder px-2" href="ServicesPage.html">Services</a>
-                            <a class="about fw-bolder px-2" href="MembersLounge.html">Accounts</a>
-                            <a class="about fw-bolder px-2 active" href="help.html">Help</a>
-                        </nav>
-                    </div>
+    <section id="Navbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-2">
+            <div class="container-fluid">
+                <div class="mx-auto">
+                    <nav class="navbar justify-content-center">
+                        <a class="about fw-bolder px-2" href="index.html">About</a>
+                        <a class="about fw-bolder px-2" href="ServicesPage.html">Services</a>
+                        <a class="about fw-bolder px-2" href="MembersLounge.html">Accounts</a>
+                        <a class="about fw-bolder px-2 active" href="help.html">Help</a>
+                    </nav>
                 </div>
-            </nav>
-        </section>
+            </div>
+        </nav>
+    </section>
 
-
-<!-- BREADCRUMB START-->
-<div class="container-sm">
-    <!-- <div class="m-3"> -->
-        <!-- <nav class="mt-5" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item" aria-current="page">Help</li>
-            </ol>
-        </nav> -->
-    <!-- </div> -->
-<!-- BREADCRUMB END-->
-    
-    <br><br>
+<div class="container" style="margin-top:10%">
 <!-- SECTION ONE WITH HEADINGS AND IMAGE START-->
-    <section class="one d-flex justify-content-center align-items-center">
-        <div class="mx-3">
-            <div class="first_sec row justify-content-center mb-5">
-                <div class="col-md-5 text-center text-md-start d-flex align-items-center my-3">
-                    
+    <section class="three">
+            <div class="row justify-content-center mb-1">
+                <div class="col-md-5 text-center text-md-start d-flex align-items-center">
                     <!-- HEADINGS START -->
                     <div class="header_body">
                         <p class="heading1">How Can We Help?</p>
@@ -68,201 +52,166 @@
                     </div>
                     <!-- HEADINGS END -->
 
-<!-- MODAL SUGGESTION FORM START -->                      
-<div class="modal top fade" id="exampleModal1ko" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
-    <div class="modal-dialog modal-xl modal-frame">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
-                    <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
-                </h5>
-            <button onclick="closebtn();" id="close" type="button" class="btn-close"
-            ></button>
-            </div>
-            
-            <div class="modal-body">
-                <form id="formko">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 my-2">
-                            <div class="form-floating">
-                                <input id="fname" type="text" class="form-control" placeholder="Your Name"  onkeyup="one();">
-                                <label class="text-muted" for="floatingTextarea">Your Name</label>
+                    <!-- MODAL SUGGESTION FORM START -->                      
+                    <div class="modal top fade" id="exampleModal1ko" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+                        <div class="modal-dialog modal-xl modal-frame">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
+                                        <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
+                                    </h5>
+                                <button onclick="closebtn();" id="close" type="button" class="btn-close"
+                                ></button>
+                                </div>
                                 
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-2">
-                            <div class="form-floating">
-                                <input id="lname" type="text" class="form-control" placeholder="Last Name" onkeyup="two();">
-                                <label class="text-muted" for="floatingTextarea">Last Name</label>
-                                
-                            </div>
-                        </div>
-                    </div>
+                                <div class="modal-body">
+                                    <form id="formko">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6 my-2">
+                                                <div class="form-floating">
+                                                    <input id="fname" type="text" class="form-control" placeholder="Your Name"  onkeyup="one();">
+                                                    <label class="text-muted" for="floatingTextarea">Your Name</label>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 my-2">
+                                                <div class="form-floating">
+                                                    <input id="lname" type="text" class="form-control" placeholder="Last Name" onkeyup="two();">
+                                                    <label class="text-muted" for="floatingTextarea">Last Name</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
 
-                    <div class="row">
-                        <div class="col-md-6 my-2">
-                            <div class="form-floating">
-                                <input id="email" type="email" class="form-control" placeholder="Email" onkeyup="three();">
-                                <label class="text-muted" for="floatingTextarea">Email</label>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-2">
-                            <div class="form-floating">
-                                <input id="contact" type="text" class="form-control" placeholder="Contact no." onkeyup="four();">
-                                <label class="text-muted" for="floatingTextarea">Contact no.</label>
-                                
-                            </div>
-                        </div>
-                    </div>
+                                        <div class="row">
+                                            <div class="col-md-6 my-2">
+                                                <div class="form-floating">
+                                                    <input id="email" type="email" class="form-control" placeholder="Email" onkeyup="three();">
+                                                    <label class="text-muted" for="floatingTextarea">Email</label>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 my-2">
+                                                <div class="form-floating">
+                                                    <input id="contact" type="text" class="form-control" placeholder="Contact no." onkeyup="four();">
+                                                    <label class="text-muted" for="floatingTextarea">Contact no.</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
 
-                    <div class="form-floating my-2">
-                        <textarea id="mess" class="form-control" placeholder="Leave a comment here"  style="height: 100px" onkeyup="five();"></textarea>
-                        <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
-                        
+                                        <div class="form-floating my-2">
+                                            <textarea id="mess" class="form-control" placeholder="Leave a comment here"  style="height: 100px" onkeyup="five();"></textarea>
+                                            <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                                    
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
+                                </div>
+                                    
+                            </div>
+                        </div>
                     </div>
-                </form>
-            </div>
-                
-            <div class="modal-footer d-flex justify-content-center">
-                <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
-            </div>
-                
-        </div>
-    </div>
-</div>
-<!-- MODAL SUGGESTION FORM END --> 
+                    <!-- MODAL SUGGESTION FORM END --> 
                 </div>
-                
+         
                 <div class="col-md-5 text-center text-md-end my-3">
                     <img class="w-75" src="assets/helppage_images/help image 2.png" alt="help image 2">
                 </div>
-
             </div>
-        </div>
     </section>
 <!-- SECTION ONE WITH HEADINGS AND IMAGE END-->
-
+</div>
 <br><br><br><br>
 
 <!-- SECTION TWO WITH ACCORDION START-->
-    <section class="two">
-        <br>
+<div class="container-sm">
+    <section class="three">
         <!-- HEADINGS OF FAQS -->
-        <p class="faq_heading text-center">Frequently Asked Questions (FAQS)</p>
-        <p class="text-center fw-bold">We have answers (well, most of the times!)</p>
+        <p class="heading1 text-center">Frequently Asked Questions (FAQS)</p>
+        <p class="text-center fw-bold">We have answers...well, most of the times</p>
 
         <div class="alert alert-success mx-1" role="alert">
-            <p class="text-center m-0">Below you'll find answers to the most common questions you may have on <span class="name_faq_link">LEAVENOTHING ORG.</span>
-                If you still can't find the answer you're looking for, just Contact us!</p>
+            <p class="text-center m-0">Below you will find the most common questions you may have on <span class="name_faq_link">LEAVENOTHING ORG.</span>
+                and the corresponding answers.  <br>If you still cannot find the information you are looking for, just contact us!</p>
         </div>
 
         <!-- HEADINGS OF FAQS -->
         
         <!-- ACCORDION START -->
-        <div class="row justify-content-center">
-            <div class="col-md-6 px-0">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What is global warming?
-                        </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">The earths climate has remained relatively stable for most of human history.  This is evident from temperature records some of which date back to the mid-1800s and before this based on reconstruction from other records and measurements e.g. tree rings.   Since about the middle of the 20th Century an increasing trend is evident in the global temperature record. This is frequently referred to as global warming, but the term can include other changes such as melting of ice and thermal expansion of the oceans which is a major contributor to sea-level rise.</div>
-                        </div>
-                    </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is global warming?
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The earths climate has remained relatively stable for most of human history.  This is evident from temperature records some of which date back to the mid-1800s and before this based on reconstruction from other records and measurements e.g. tree rings.   Since about the middle of the 20th Century an increasing trend is evident in the global temperature record. This is frequently referred to as global warming, but the term can include other changes such as melting of ice and thermal expansion of the oceans which is a major contributor to sea-level rise.</div>
                 </div>
             </div>
-
-            <div class="col-md-6 px-0">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What is adaptation?
-                        </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Adaptation is the approach for addressing the current and future risks posed by a changing climate. Climate adaptation involves taking steps to adjust human and natural systems in response to existing or anticipated climatic change, in order both to avoid unwanted impacts and to take advantage of new opportunities that may arise. The National Adaptation Framework defines adaptation as 'a change in natural or human systems in response to the impacts of climate change. These changes moderate harm or exploit beneficial opportunities and can be in response to actual or expected impacts.</div>
-                        </div>
-                    </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is adaptation?
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Adaptation is the approach for addressing the current and future risks posed by a changing climate. Climate adaptation involves taking steps to adjust human and natural systems in response to existing or anticipated climatic change, in order both to avoid unwanted impacts and to take advantage of new opportunities that may arise. The National Adaptation Framework defines adaptation as 'a change in natural or human systems in response to the impacts of climate change. These changes moderate harm or exploit beneficial opportunities and can be in response to actual or expected impacts.</div>
                 </div>
             </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6 px-0">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <span class="acc3_body">What impacts of climate change have been observed and what is projected?</span>
-                        </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">In 2018, the global temperature had been increased by 1.0°C relative to pre-industrial levels. At the current rate of warming, the world is expected to reach 1.5°C warming between 2030 and 2052 (IPCC, 2008).  If this continues, the 2°C increase could occur around 2060.  Globally the two main features of climate change are: 
-                            <ul class="mt-3">
-                                <li>changes in the rate of occurrence and scales of extreme weather events, such as heatwaves or rainfall events, and</li>
-                                <li>slow onset changes such as sea-level rise, loss of glaciers, and ecosystem changes. </li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What impacts of climate change have been observed and what is projected?
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">In 2018, the global temperature had been increased by 1.0°C relative to pre-industrial levels. At the current rate of warming, the world is expected to reach 1.5°C warming between 2030 and 2052 (IPCC, 2008).  If this continues, the 2°C increase could occur around 2060.  Globally the two main features of climate change are: 
+                    <ul class="mt-3">
+                        <li>changes in the rate of occurrence and scales of extreme weather events, such as heatwaves or rainfall events, and</li>
+                        <li>slow onset changes such as sea-level rise, loss of glaciers, and ecosystem changes. </li>
+                    </ul>
+                </div>
                 </div>
             </div>
-
-            <div class="col-md-6 px-0">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <span class="acc3_body">To whom do I report pollution such as: fish kill; forest fire; oil spillage?</span>
-                        </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Pollution incidents should be reported in the first instance to the local authority in whose area the incident occurred as they can respond rapidly. The Local Authority will contact the Environmental Protection Agency if an EPA licensed activity is concerned.  If you know it is an EPA licensed activity you should contact us directly as well as the Local Authority.  Use the following link to obtain full details about how to Make an Environmental Complaint</div>
-                        </div>
-                    </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                    To whom do I report pollution such as: fish kill; forest fire; oil spillage?</span>
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Pollution incidents should be reported in the first instance to the local authority in whose area the incident occurred as they can respond rapidly. The Local Authority will contact the Environmental Protection Agency if an EPA licensed activity is concerned.  If you know it is an EPA licensed activity you should contact us directly as well as the Local Authority.  Use the following link to obtain full details about how to Make an Environmental Complaint</div>
                 </div>
             </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6 px-0">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #5
-                        </button>
-                        </h2>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                        </div>
-                    </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #5
+                </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                 </div>
             </div>
-
-            <div class="col-md-6 px-0">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #6
-                        </button>
-                        </h2>
-                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                        </div>
-                    </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #6
+                </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                 </div>
             </div>
         </div>
-        <!-- ACCORDION END -->
     </section>
 </div>
+        <!-- ACCORDION END -->
 <!-- SECTION TWO WITH ACCORDION END-->
 
 <br><br><br><br><br><br>
@@ -270,7 +219,7 @@
 <!-- SECTION THREE WITH CONTACT US START-->
 <div class="container">
     <section class="three">
-            <p class="touch text-center">GET IN TOUCH</p>
+            <p class="heading1 text-center">GET IN TOUCH</p>
             <br>
             <div class="row gy-3">
 
@@ -287,7 +236,7 @@
                                 </li>
                                 <li class="">
                                     <p class="mb-0 h5">LeaveNothing.Org Main Office</p>
-                                    <p class="text-muted">146 4th Flr. Rima Building Filinvest, Alabang, Muntinlupa</p>
+                                    <p class="text-muted">146 4F Rima Bldg, Alabang, Muntinlupa</p>
                                 </li>
                                 <li class="">
                                     <p class="mb-0 h5">LeaveNothing.Org Volunteers</p>
@@ -307,15 +256,15 @@
                             <ul class="list-unstyled footer-link text-center">
                                 <li class="">
                                     <p class="mb-0 h5">LeaveNothing.Org Group</p>
-                                    <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
+                                    <p class="text-muted">+632 8123 4567</p>
                                 </li>
                                 <li class="">
                                     <p class="mb-0 h5">LeaveNothing.Org Main Office</p>
-                                    <p class="text-muted">146 4th Flr. Rima Building Filinvest, Alabang, Muntinlupa</p>
+                                    <p class="text-muted">+632 8123 4567</p>
                                 </li>
                                 <li class="">
                                     <p class="mb-0 h5">LeaveNothing.Org Group</p>
-                                    <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
+                                    <p class="text-muted">+632 8123 4567</p>
                                 </li>
                             </ul>
                         </div>
@@ -352,106 +301,8 @@
 
 <br><br><br>
 
+<!--USES COMPONENT FOR FOOTER-->
 <div w3-include-html="footer.html"></div>
- 
-<!-- FOOTER LAST SECTION START -->
-            <!-- <section class="four">
-                <br>
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-12 mb-4">
-                            <h1 class="headings">
-                                Get news &amp; updates
-                            </h1>
-                        </div>
-
-                        <div class="col-md-12">
-                            <form action="" method="">
-                                <div class="row">
-                                    <div class="col-md-4 mb-4">
-                                        <input type="text" class="input1 form-control" placeholder="Your name here">
-                                    </div>
-
-                                    <div class="col-md-4 mb-4">
-                                        <input type="email" class="input2 form-control" placeholder="Your Email here">
-                                    </div>
-
-                                    <div class="col-md-4 mb-4">
-                                        <button class="subscribe_btn btn w-100 text-light" type="" value="">Subscribe</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <br>
-                <footer class="myfooter px-5 pt-5 pb-2">
-                    <div class="container">
-                        <div class="row mb-4">
-                            <div class="col-md-3 mb-4 text-md-start text-center">
-                                <h4>About us</h4>
-                                <p class="text-muted">This website serves to be a go-to platform for any volunteer projects related to the environment
-                                    environmental justice as well as an archive for any resources that caters to the environmental and
-                                    ecological information.</p>
-                                <p><a class="click_footer text-success" href="#"><u>Click here to learn more</u></a></p>
-                            </div>
-
-                            <div class="col-md-3 mb-4 text-md-start text-center">
-                                <h4>Contact &amp; Address</h4>
-                                <ul class="list-unstyled footer-link text-md-start text-center">
-                                    <li class="">
-                                        <span class="fw-bold">LeaveNothing.Org Group</span>
-                                        <p class="text-muted">146 Yuma Street Pasay, Metro Manila</p>
-                                    </li>
-                                    <li class="">
-                                        <span class="fw-bold">LeaveNothing.Org Main Office</span>
-                                        <p class="text-muted">146 4th Flr. Rima Building Filinvest, Alabang, Muntinlupa</p>
-                                    </li>
-                                    <li class="">
-                                        <span class="fw-bold">LeaveNothing.Org Volunteers</span>
-                                        <p class="text-muted">4526 Beligma street Pasig city, Metro Manila</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-3 mb-4 text-center">
-                                <h4>Quick Links</h4>
-                                    <ul class="list-unstyled footer-link text-center">
-                                        <li><a class="footer_links text-success" href="#">Home</a></li>
-                                        <li><a class="footer_links text-success" href="#">Services</a></li>
-                                        <li><a class="footer_links text-success" href="#">Accounts</a></li>
-                                        <li><a class="footer_links text-success" href="#">Help</a></li>
-                                        
-                                    </ul>
-                            </div>
-
-                            <div class="col-md-3 text-center">
-                                <h4>Our Social Media</h4>
-                                    <ul class="list-unstyled footer-link d-flex justify-content-center">
-                                        <li><a href="#" class=""><i class="bi bi-facebook mx-2" style="font-size:40px; color:#5D9943;"></i></a></li>
-                                        <li><a href="#" class=""><i class="bi bi-twitter mx-2" style="font-size:40px; color:#5D9943;"></i></a></li>
-                                        <li><a href="#" class=""><i class="bi bi-github mx-2" style="font-size:40px; color:#5D9943;"></i></a></li>
-                                        <li><a href="#" class=""><i class="bi bi-instagram mx-2" style="font-size:40px; color:#5D9943;"></i></a></li> 
-                                    </ul>
-                                    <br><br><br>
-                                    <img class="img-fluid" src="assets/helppage_images/logo-no-background.png">
-                            </div>
-                        </div>
-
-                        <div class="text-md-start text-center">
-                            <p class="linesafooter mb-0"></p>
-                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">Copyright ⓒ2022 LeaveNothing.Org</p>
-                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">|</p>
-                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a class="privacy_footer text-muted" href="#">Privacy Policy</a></p>
-                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;">|</p>
-                            <p class="text-muted mb-0 me-3 text-md-start text-center pt-2 d-inline-flex" style="font-size:13px;"><a class="privacy_footer text-muted" href="#">Site Map</a></p>
-                        </div>
-                    </div>
-                </footer>
-            </section> -->
- <!-- FOOTER LAST SECTION END -->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 

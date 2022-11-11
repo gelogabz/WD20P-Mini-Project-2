@@ -35,10 +35,12 @@ body{
 }
 .heading1{
     font-size: 40px;
-    margin-bottom: 1px;
-    color: #3f8321;
+    font-family:var(--primaryheader-font);
+    color: #265512;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 2px 3px 6px rgba(54,21,0, 0.4);
     -webkit-animation: heading1 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: heading1 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -156,10 +158,10 @@ body{
 .two{
     background-color: rgba(255, 254, 254,0.6);
     border-radius: 35px;
-    padding-top:20px;
+    padding-top:40px;
     padding-right:30px;
     padding-left:30px;
-    padding-bottom:60px;
+    padding-bottom:30px;
 }
 
 .faq_heading{
@@ -202,10 +204,10 @@ body{
 .three{
     background-color: rgba(255, 254, 254,0.6);
     border-radius: 35px;
-    padding-top:20px;
-    padding-right:30px;
-    padding-left:30px;
-    padding-bottom:60px;
+    padding-top:30px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:20px;
 }
 .address{
     background-color: rgba(147, 247, 169, 0.6);
