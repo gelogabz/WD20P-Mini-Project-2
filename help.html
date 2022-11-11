@@ -82,27 +82,25 @@
                 <h5 class="modal-title" id="exampleModalLabel"><p class="h4 float-start">Suggestion Form</p>
                     <br><p class="h6 text-muted float-start">Please let us know what you think.</p>
                 </h5>
-            <button type="button" class="btn-close"
-            data-bs-toggle="modal" data-bs-target="#exampleModal2ko"></button>
+            <button onclick="closebtn();" id="close" type="button" class="btn-close"
+            ></button>
             </div>
             
             <div class="modal-body">
                 <form id="formko">
                     <div class="row justify-content-center">
                         <div class="col-md-6 my-2">
-                            <div class="form-floating success">
-                                <input id="fname" type="text" class="form-control" placeholder="Your Name" id="floatingTextarea">
+                            <div class="form-floating">
+                                <input id="fname" type="text" class="form-control" placeholder="Your Name"  onkeyup="one();">
                                 <label class="text-muted" for="floatingTextarea">Your Name</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                
                             </div>
                         </div>
                         <div class="col-md-6 my-2">
-                            <div class="form-floating error">
-                                <input id="lname" type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
+                            <div class="form-floating">
+                                <input id="lname" type="text" class="form-control" placeholder="Last Name" onkeyup="two();">
                                 <label class="text-muted" for="floatingTextarea">Last Name</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                
                             </div>
                         </div>
                     </div>
@@ -110,27 +108,24 @@
                     <div class="row">
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input id="email" type="email" class="form-control" placeholder="Email" id="floatingTextarea">
+                                <input id="email" type="email" class="form-control" placeholder="Email" onkeyup="three();">
                                 <label class="text-muted" for="floatingTextarea">Email</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                
                             </div>
                         </div>
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input id="contact" type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
+                                <input id="contact" type="text" class="form-control" placeholder="Contact no." onkeyup="four();">
                                 <label class="text-muted" for="floatingTextarea">Contact no.</label>
-                                <i class="bi bi-shield-fill-exclamation"></i>
-                                <i class="bi bi-check-circle-fill"></i>
+                                
                             </div>
                         </div>
                     </div>
 
                     <div class="form-floating my-2">
-                        <textarea id="mess" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea id="mess" class="form-control" placeholder="Leave a comment here"  style="height: 100px" onkeyup="five();"></textarea>
                         <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
-                        <i class="bi bi-shield-fill-exclamation"></i>
-                        <i class="bi bi-check-circle-fill"></i>
+                        
                     </div>
                 </form>
             </div>
@@ -138,7 +133,7 @@
             <div class="modal-footer d-flex justify-content-center">
                 <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
             </div>
-
+                
         </div>
     </div>
 </div>
