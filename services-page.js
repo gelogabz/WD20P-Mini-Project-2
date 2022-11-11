@@ -43,3 +43,4 @@ window.addEventListener("resize", moveSlider);
 
 
 //sample vid carousel
+
