@@ -18,12 +18,12 @@ var regBox = document.getElementById("register");
 
 function register(){
   event.preventDefault();
-    var email = document.getElementById("re").value;
-    var password = document.getElementById("rp").value;
-    var passwordRetype = document.getElementById("rrp").value;
+    var email = document.getElementById("re").value.trim();
+    var password = document.getElementById("rp").value.trim();
+    var passwordRetype = document.getElementById("rrp").value.trim();
     
     if (email == ""){
-        alert("Email required.");
+        alert("Username required.");
         return ;
     }
     else if (password == ""){
@@ -35,7 +35,7 @@ function register(){
         return ;
     }
     else if ( password != passwordRetype ){
-        alert("Password don't match retype your Password.");
+        alert("Passwords don't match, retype your Password.");
         document.getElementById("rp").value="";
         document.getElementById("rrp").value="";
         return;
@@ -43,29 +43,32 @@ function register(){
     else if(emailArray.indexOf(email) == -1){
         emailArray.push(email);
         passwordArray.push(password);
-        alert(email + " Thanks for registration. \nTry to login Now");
+        alert(email + ", " + "thank you for registering. \n Try to login now");
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
         document.getElementById("rrp").value="";
+        document.getElementById("SignUp").style.display = "none";
+        document.getElementById("Login").style.display = "block";
         return;
     }
     else{
-        alert(email + " is already register.");
+        alert(email + " is already registered.");
         return ;
     }
 }
+
 function login(){
   event.preventDefault();
-    var email = document.getElementById("se").value;
-    var password = document.getElementById("sp").value;
+    var email = document.getElementById("se").value.trim();
+    var password = document.getElementById("sp").value.trim();
     var i = emailArray.indexOf(email);
 
     if(emailArray.indexOf(email) == -1){
         if (email == ""){
-            alert("Email required.");
+            alert("Username required.");
             return ;
         }
-        alert("Email does not exist.");
+        alert("Username does not exist.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
         return ;
@@ -82,7 +85,39 @@ function login(){
         alert(email + " Login Sucessfully. Welcome to our Website.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
-        location.reload();
+        window.location= "Accounts.html";
         return ;
     }
 }
+
+//for FOOTER includehtml function
+
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  };
+
+includeHTML();
