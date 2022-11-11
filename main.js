@@ -101,7 +101,7 @@ function newsletter(){
         alert("Email required.");
     }
     else{
-        alert("Successfully Submitted Email and Name Thank you");
+        alert(name + " " + email + " Successfully Submitted Thank you ");
         window.location = "index.html"; 
     }
 };
