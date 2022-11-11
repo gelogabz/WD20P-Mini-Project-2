@@ -22,6 +22,7 @@ function register(){
     var password = document.getElementById("rp").value.trim();
     var passwordRetype = document.getElementById("rrp").value.trim();
     
+    
     if (email == ""){
         alert("Username required.");
         return ;
@@ -47,8 +48,6 @@ function register(){
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
         document.getElementById("rrp").value="";
-        document.getElementById("SignUp").style.display = "none";
-        document.getElementById("Login").style.display = "block";
         return;
     }
     else{
@@ -81,7 +80,7 @@ function login(){
         alert("Password does not match.");
         return ;
     }
-    else {
+    else  {
         alert(email + " Login Sucessfully. Welcome to our Website.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
@@ -90,34 +89,20 @@ function login(){
     }
 }
 
-//for FOOTER includehtml function
-
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-      }
+function newsletter(){
+    event.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    
+    if (name == ""){
+        alert("Name required.");
     }
-  };
+    else if (email == ""){
+        alert("Email required.");
+    }
+    else{
+        alert("Successfully Submitted Email and Name Thank you");
+        window.location="index.html"; 
+    }
+};
 
-includeHTML();
