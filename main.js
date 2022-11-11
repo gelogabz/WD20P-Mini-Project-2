@@ -36,7 +36,7 @@ function register(){
         return ;
     }
     else if ( password != passwordRetype ){
-        alert("Password don't match retype your Password.");
+        alert("Passwords don't match, retype your Password.");
         document.getElementById("rp").value="";
         document.getElementById("rrp").value="";
         return;
@@ -44,16 +44,18 @@ function register(){
     else if(emailArray.indexOf(email) == -1){
         emailArray.push(email);
         passwordArray.push(password);
-        alert(email + " " + "Thanks for registration. \n Try to login Now");
+        alert(email + ", " + "thank you for registering. \n Try to login now");
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
-        document.getElementById("rrp").value=""; 
+        document.getElementById("rrp").value="";
+        return;
     }
     else{
-        alert(email + " is already register.");
+        alert(email + " is already registered.");
         return ;
     }
 }
+
 function login(){
   event.preventDefault();
     var email = document.getElementById("se").value.trim();
@@ -86,6 +88,7 @@ function login(){
         return ;
     }
 }
+
 function newsletter(){
     event.preventDefault();
     var name = document.getElementById("name").value.trim();
@@ -102,3 +105,4 @@ function newsletter(){
         window.location = "index.html"; 
     }
 };
+
