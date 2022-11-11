@@ -22,6 +22,7 @@ function register(){
     var password = document.getElementById("rp").value.trim();
     var passwordRetype = document.getElementById("rrp").value.trim();
     
+    
     if (email == ""){
         alert("Username required.");
         return ;
@@ -46,10 +47,8 @@ function register(){
         alert(email + " " + "Thanks for registration. \n Try to login Now");
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
-        document.getElementById("rrp").value="";
-        document.getElementById("SignUp").style.display = "none";
+        document.getElementById("rrp").value=""; 
 
-        return;
     }
     else{
         alert(email + " is already register.");
@@ -80,11 +79,28 @@ function login(){
         alert("Password does not match.");
         return ;
     }
-    else {
+    else  {
         alert(email + " Login Sucessfully. Welcome to our Website.");
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
         window.location= "Accounts.html";
         return ;
+    }
+}
+
+function newsletter(){
+    event.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    
+    if (name == ""){
+        alert("Name required.");
+    }
+    else if (email == ""){
+        alert("Email required.");
+    }
+    else{
+        alert("Successfully Submitted. Thank you");
+        window.location="index.html"; 
     }
 }
