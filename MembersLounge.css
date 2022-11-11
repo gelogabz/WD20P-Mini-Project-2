@@ -21,6 +21,23 @@
     box-sizing: border-box;
 }
 
+/* navbar styles here */
+.about1 {
+    color: lightgreen;
+    font-family: Poppins;
+    text-shadow: 2px 2px black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.active {
+    color: white;
+}
+
+.about1:hover {
+    color: white;
+}
+
 body {
     width: 100%;
     margin: 0;
@@ -277,6 +294,70 @@ a {
     width: 100%;
 }
 
+/* FOOTER START /  / */
+
+.four {
+    background-image: linear-gradient(1000deg, #d1ebb0, #dbf5d2);
+    background-image: linear-gradient(1000deg, #bbecba, #98cde7);
+}
+
+.myfooter {
+    background-color: rgba(255, 254, 254, 0.6);
+}
+
+.input1 {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 50px;
+}
+
+.input2 {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 50px;
+}
+
+.input1:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0 0 0 0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.input2:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0 0 0 0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.subscribe_btn {
+    background-color: #34aeeb !important;
+    height: 50px;
+}
+
+.subscribe_btn:hover {
+    background-color: #1b94d1 !important;
+}
+
+.linesafooter {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c6c7c3;
+}
+
+.click_footer:hover {
+    color: #34aeeb !important;
+}
+
+.footer_links:hover {
+    font-size: 19px;
+    color: #34aeeb !important;
+}
+
+.privacy_footer:hover {
+    color: #34aeeb !important;
+}
+
+ /* FOOTER END */
 
 
 /* Responsiveness */
@@ -322,4 +403,4 @@ a {
     .header_wrapper .cols_container .right_col nav button {
         margin-top: 0;
     }
-}
+} 
