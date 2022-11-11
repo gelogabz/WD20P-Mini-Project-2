@@ -103,37 +103,11 @@ body{
 
 /* MODAL START */
 /* SUGGESTION FORM INPUTS */
+
 /* BUTTON ON MODAL START */
 
 
-.form-floating{
-    position: absolute;
-}
 
-.bi-check-circle-fill{
-    
-    position: relative;
-    font-size: 18px;
-    bottom: 41px;
-    left: 490px;
-}
-.bi-shield-fill-exclamation{
-    
-    position: relative;
-    font-size: 18px;
-    bottom: 41px;
-    left: 490px;
-}
-
-/* .form-floating.success .bi-check-circle-fill{
-    color: #3f8321;
-    visibility: visible;
-}
-
-.form-floating.error ..bi-check-circle-fill{
-    color: #e74c3c;
-    visibility: visible;
-} */
 
 .modal_btn{
     color:white;

@@ -91,17 +91,16 @@
                     <div class="row justify-content-center">
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input onkeyup="yourname();" id="fname" type="text" class="form-control" placeholder="Your Name" id="floatingTextarea">
-                                <label class="text-muted" for="floatingTextarea">Your Name</label> 
-                                <p class="text-danger ps-1 my-0" id="error1"></p>
+                                <input id="fname" type="text" class="form-control" placeholder="Your Name"  onkeyup="one();">
+                                <label class="text-muted" for="floatingTextarea">Your Name</label>
+                                
                             </div>
-                            
                         </div>
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input onkeyup="Lastname();" id="lname" type="text" class="form-control" placeholder="Last Name" id="floatingTextarea">
+                                <input id="lname" type="text" class="form-control" placeholder="Last Name" onkeyup="two();">
                                 <label class="text-muted" for="floatingTextarea">Last Name</label>
-                                <p class="text-danger ps-1 my-0" id="error2"></p>
+                                
                             </div>
                         </div>
                     </div>
@@ -109,33 +108,32 @@
                     <div class="row">
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input id="inputEmail"  onkeyup="emailko();" type="email" class="form-control" placeholder="Email" id="floatingTextarea">
-                                <label for="inputEmail" class="text-muted" for="floatingTextarea">Email</label>
-                                <p class="text-danger ps-1 my-0" id="error3"></p>
+                                <input id="email" type="email" class="form-control" placeholder="Email" onkeyup="three();">
+                                <label class="text-muted" for="floatingTextarea">Email</label>
+                                
                             </div>
                         </div>
                         <div class="col-md-6 my-2">
                             <div class="form-floating">
-                                <input id="contacts" onkeyup="contactNo();" type="text" class="form-control" placeholder="Contact no." id="floatingTextarea">
+                                <input id="contact" type="text" class="form-control" placeholder="Contact no." onkeyup="four();">
                                 <label class="text-muted" for="floatingTextarea">Contact no.</label>
-                                <p class="text-danger ps-1 my-0" id="error4"></p>
+                                
                             </div>
                         </div>
                     </div>
 
                     <div class="form-floating my-2">
-                        <textarea onkeyup="message();" id="mess" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea id="mess" class="form-control" placeholder="Leave a comment here"  style="height: 100px" onkeyup="five();"></textarea>
                         <label class="text-muted" for="floatingTextarea2">Comments/Message</label>
-                        <p class="text-danger ps-1 my-0" id="error5"></p>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
+                        
                     </div>
                 </form>
             </div>
                 
-            
-
+            <div class="modal-footer d-flex justify-content-center">
+                <button onclick="btn();" id="submit" type="button" class="modal_btn">Submit Suggestions</button>
+            </div>
+                
         </div>
     </div>
 </div>
