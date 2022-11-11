@@ -27,7 +27,7 @@ $(document).ready(
                 if (localStorage.getItem("postsList") === null || localStorage.getItem("postsList") === [] || localStorage.getItem("postsList") === undefined) {
                     let postsList = [];
                     postsList.push(newProduct);
-                    localStorage.setItem("postsList", JSON.parse(postsList));
+                    localStorage.setItem("postsList", JSON.stringify(postsList));
                 } else {
                     let postsList = JSON.parse(localStorage.getItem("postsList"));
                     postsList.push(newProduct);
