@@ -1,3 +1,13 @@
+var nav = document.querySelector('nav');
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 100) {
+        nav.classList.add('bg-light', 'shadow', 'bg-opacity-75');
+    } else {
+        nav.classList.remove('bg-light', 'shadow',);
+    }
+
+})
+
 function randomNumberID() {
     return Math.floor(Math.random() * (1000002 - 1 + 1)) + 1;
 }
@@ -27,7 +37,7 @@ $(document).ready(
                 if (localStorage.getItem("postsList") === null || localStorage.getItem("postsList") === [] || localStorage.getItem("postsList") === undefined) {
                     let postsList = [];
                     postsList.push(newProduct);
-                    localStorage.setItem("postsList", JSON.parse(postsList));
+                    localStorage.setItem("postsList", JSON.stringify(postsList));
                 } else {
                     let postsList = JSON.parse(localStorage.getItem("postsList"));
                     postsList.push(newProduct);
@@ -47,7 +57,7 @@ $(document).ready(
 //get the data stored in the localStorage for display on load
 function getpostsLists() {
     if (localStorage.getItem("postsList") === null) {
-        alert("Your dashboard is currently empty. Use the add button to add new products.");
+        alert("Your timeline is empty. Just click post to have a memorable experience to get back to.");
         document.getElementById("search").disabled = true;
     } else {
         document.getElementById("search").disabled = false;
@@ -63,7 +73,7 @@ function getpostsLists() {
             let description = postsList[i].description;
 
             postDisplay.innerHTML += '<li class="list-group-item"><img src="' + img + '" style="width:100px;""><br><strong>' + name + '</strong><p>' + category + '</p><p>' + description + '</p><p><a' +
-                ' href="#" onclick="editProduct(\'' + id + '\')" data-toggle="modal" data-target="#addNewPost">' +
+                ' href="#" onclick="editProduct(\'' + id + '\')" data-bs-toggle="modal" data-bs-target="#addNewPost">' +
                 '<i class="fa fa-edit green-text darken-2 "></i>&nbsp;Edit</a> &nbsp;&nbsp; ' +
                 '<a href="#" id="deleteId" onclick="deleteProduct(\'' + id + '\')"><i class="fa fa-trash' +
                 ' red-text' +
