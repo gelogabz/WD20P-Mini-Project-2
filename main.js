@@ -48,7 +48,6 @@ function register(){
         document.getElementById("re").value ="";
         document.getElementById("rp").value="";
         document.getElementById("rrp").value=""; 
-
     }
     else{
         alert(email + " is already register.");
@@ -87,7 +86,6 @@ function login(){
         return ;
     }
 }
-
 function newsletter(){
     event.preventDefault();
     var name = document.getElementById("name").value.trim();
