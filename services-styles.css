@@ -72,7 +72,7 @@ body h2 {
 .main-hero {
     height: 100vh;
     width: auto;
-    padding: 1.5rem;
+    padding: 1.2rem;
     background-color: var(--tertiarycolor1);
     background-image: url(./assets/headerbg.jpg);
     background-repeat: no-repeat;
