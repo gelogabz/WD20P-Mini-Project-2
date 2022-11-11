@@ -102,7 +102,7 @@ function newsletter(){
     }
     else{
         alert("Successfully Submitted Email and Name Thank you");
-        window.location="index.html"; 
+        window.location = "index.html"; 
     }
 };
 
