@@ -72,10 +72,10 @@ function getpostsLists() {
             let category = postsList[i].category;
             let description = postsList[i].description;
 
-            postDisplay.innerHTML += '<li class="list-group-item"><img src="' + img + '" style="width:100px;""><br><strong>' + name + '</strong><p>' + category + '</p><p>' + description + '</p><p><a' +
+            postDisplay.innerHTML += '<li class="list-group-item"><img src="' + img + '" style="width:400px;""><br><h5>' + name + '</h5><p>' + category + '</p><p>' + description + '</p><p><a' +
                 ' href="#" onclick="editProduct(\'' + id + '\')" data-bs-toggle="modal" data-bs-target="#addNewPost">' +
-                '<i class="fa fa-edit green-text darken-2 "></i>&nbsp;Edit</a> &nbsp;&nbsp; ' +
-                '<a href="#" id="deleteId" onclick="deleteProduct(\'' + id + '\')"><i class="fa fa-trash' +
+                '<i class="bi bi-pencil green-text darken-2 "></i>&nbsp;Edit</a> &nbsp;&nbsp; ' +
+                '<a href="#" id="deleteId" onclick="deleteProduct(\'' + id + '\')"><i class="bi bi-trash' +
                 ' red-text' +
                 ' darken-2"></i>&nbsp;' +
                 ' Delete</a>' +
@@ -113,14 +113,14 @@ function editProduct(id) {
     } else {
         let editButton = document.createElement('button');
         editButton.id = "editButton";
-        editButton.className = "fa fa-hdd-o btn btn-outline-primary btn-sm m-2";
+        editButton.className = "bi bi-hdd-stack btn btn-outline-primary btn-sm m-2";
         editButton.textContent = " Save data";
         parentDiv.appendChild(editButton);
     }
     for (let i = 0; i < postsList.length; i++) {
         if (postsList[i].id === id) {
-            //HERE updated this
-            document.getElementById("showImage").innerHTML = "<img src='" + postsList[i].img + "' style='width:100px;'>" ;
+            //HERE
+            document.getElementById("showImage").innerHTML = "<img src='" + postsList[i].img + "' style='width:400px;'>" ;
             document.getElementById("titleName").value = postsList[i].name;
             document.getElementById("expDescription").value = postsList[i].description;
             document.getElementById("Category").value = postsList[i].category;
