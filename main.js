@@ -45,7 +45,9 @@ function register(){
         emailArray.push(email);
         passwordArray.push(password);
         alert(email + ", " + "thank you for registering. \n Try to login now");
-        window.location = "index.html";
+        document.getElementById("re").value="";
+        document.getElementById("rp").value="";
+        document.getElementById("rrp").value="";
         return;
     }
     else{
