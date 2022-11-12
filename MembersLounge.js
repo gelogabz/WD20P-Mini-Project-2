@@ -85,7 +85,6 @@ function getpostsLists() {
     }
 }
 
-
 // deleting the main bookmark.
 function deleteProduct(id) {
     let postsList = JSON.parse(localStorage.getItem("postsList"));
@@ -109,7 +108,6 @@ function editProduct(id) {
     let parentDiv = document.getElementById('modalFooter');
     let postsList = JSON.parse(localStorage.getItem("postsList"));
 
-
     if (parentDiv.contains(document.getElementById("editButton"))) {
         document.getElementById('editButton').disabled = false;
     } else {
@@ -121,6 +119,8 @@ function editProduct(id) {
     }
     for (let i = 0; i < postsList.length; i++) {
         if (postsList[i].id === id) {
+            //HERE updated this
+            document.getElementById("showImage").innerHTML = "<img src='" + postsList[i].img + "' style='width:100px;'>" ;
             document.getElementById("titleName").value = postsList[i].name;
             document.getElementById("expDescription").value = postsList[i].description;
             document.getElementById("Category").value = postsList[i].category;
@@ -138,8 +138,9 @@ function editProduct(id) {
         localStorage.setItem("postsList", JSON.stringify(postsList));
         getpostsLists();
         resetForm();
+        
         document.getElementById("editButton").style.display = "none";
-
+//        document.getElementById("editButton").data-bs-dismiss;
         $(".createPost").on('click', productFormReset());
 
     });
@@ -151,6 +152,7 @@ function resetForm() {
     document.getElementById("titleName").value = "";
     document.getElementById("expDescription").value = "";
     document.getElementById("Category").value = "";
+   
 }
 
 function productFormReset() {
@@ -161,7 +163,7 @@ function productFormReset() {
 
 function addProduct() {
     let productTempId = randomNumberID();
-    let showImage = document.getElementById('showImage').value;
+    let showImage = sessionStorage.getItem('img');
     let titleName = document.getElementById('titleName').value;
     let expDescription = document.getElementById('expDescription').value;
     let Category = document.getElementById('Category').value;
