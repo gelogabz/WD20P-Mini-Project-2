@@ -81,22 +81,26 @@
                     <button class="green_btn" type="button" data-bs-toggle="modal" data-bs-target="#addNewPost" style="float:right;vertical-align: bottom;text-align: center;padding-top:5px;margin-right:20px">
                     <i class="bi bi-pencil-square m-1 modalone" id="createPost"></i> Post</button></h4> 
                 </div>
-                <div class="modal fade" id="addNewPost" tabindex="-1" role="dialog" aria-labelledby="addNewPostLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                            <!--Modal Header-->
-                            <div class="modal-header">
-                                <img class="imgLogo h-25 w-25"
-                                    src="../WD20P-Mini-Project-2-master/assets/IconOnlyGreen.png">
-                                <h4 class="modal-title left" id="addNewPostLabel">
-                                    <i class="bi bi-pencil-square m-1"></i> Create New Post
-                                </h4>
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close">
+                <input class="form-control form-control-sm" id="search" type="search" required class="autocomplete" placeholder="Search Experience" style="width: 200px;margin-left:20px">
 
-                                </button>
+                <section id="Post">
+                  <div class="modal fade" id="addNewPost" tabindex="-1" role="dialog" aria-labelledby="addNewPostLabel" aria-hidden="true" style="font-family:Poppins;">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="container d-flex justify-content-center" style="margin-top:10px">
+                          <div class="row">
+                            <div class="col-10">
                             </div>
-                            <!--end of header-->
-                            <div class="modal-body">
+                          </div>
+                          <div class="form form-control" style="border:none">
+                            <form class="rounder p-30 p-sm-2 pb-0" id="loginform" target="_blank" action="" method="POST">
+                              <img class="imgLogo" style="width:50px;height:50px"
+                                  src="assets/IconOnlyGreen.png">
+                              <h5 style="text-align:center;margin:2%">Create New Post</h5>
+                              <br>
+
+                              <div class="modal-body">
                                 <form class="form-horizontal text-start m-2 p-4 d-inline-block" role="form" id="modalForm">
                                     <div class="form-group">
                                         <div id="showImage"></div>
@@ -117,26 +121,20 @@
                                         </script>
                                     </div>
                                     <div class="form-group">
-                                        <label for="titleName">Title</label>
-                                        <input id="titleName" type="text" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="expDescription">Experiences</label>
-                                        <textarea id="expDescription" type="text" style="height: 100px"></textarea>
+                                      <label for="username" class="col-form-label col-form-label-sm">Title</label>
+                                      <input type="text" id="titleName" class="form-control" placeholder="Enter title" required>
                                     </div>
                                     <div class="form-group mb-4">
-                                        <label for="Category">Travel Category</label>
-                                        <select id="Category" class="custom-select">
-                                            <option value="Mountaineering">Mountaineering</option>
-                                            <option value="Diving">Diving</option>
-                                            <option value="Camping">Camping</option>
-                                            <option value="Snorkeling">Snorkeling</option>
-                                            <option value="Trekking">Trekking</option>
-                                            <option value="Hiking">Hiking</option>
-                                            <option value="Canyoning">Canyoning</option>
-                                            <option value="Rafting">Rafting</option>
-                                            <option value="Surfing">Surfing</option>
-                                            <option value="Caving">Caving</option>
+                                      <label for="username" class="col-form-label col-form-label-sm">Description</label>
+                                      <textarea id="expDescription" class="form-control" placeholder="Describe your experience" type="text" style="height:100px" required></textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                      <label for="username" class="col-form-label col-form-label-sm">Select Travel Category</label>
+                                        <select id="Category" class="form-control">
+                                            <option value="Tree Planting">Tree Planting</option>
+                                            <option value="Recycle">Recycling</option>
+                                            <option value="Bike to work">Bike to work</option>
+                                            <option value="Coastal cleanup">Coastal Cleanup</option>
                                         </select>
                                     </div>
                                     <div class="modal-footer align-content-center" id="modalFooter">
@@ -149,15 +147,12 @@
                                 </form>
                             </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div>
-                <form>
-                    <div class="input-field">
-                      <input id="search" type="search" required class="autocomplete" placeholder="Search Experience">
-                    </div>
-                  </form>
-                <h4 class="card-title" > Posts</h4>
+                  </div>
+                </section>
+
+                <h5 class="card-title" > Posts</h5>
                 <ul class="list-group" id="postDisplay">
                   <!-- codes  here supplied via JS-->
                 </ul>
